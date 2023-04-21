@@ -1,0 +1,83 @@
+MCQs:
+1. What is the key difference between graduate and undergraduate versions of course number "6874"?
+A) Graduate students have more homework
+B) Undergraduate students focus on classical computational biology
+C) Graduate students cover more advanced algorithm content 
+D) There are no differences 
+
+2. Who will be giving a talk on synthetic biology programming cells using repressilators in Course Number 6874?
+A) Russ Doolittle  
+B) Doug Loffenberger 
+C )Ron Weiss
+D) George Church
+
+3. Which topic is covered in Lecture Nine of the course?
+A) Motif finding
+B) Protein-protein interactions
+C )Markov Models 
+D )RNA-seq analysis
+
+4. How many problem sets are there for Course Number 6874?
+A )Three
+B )Five 
+C )Ten     
+D )None
+
+5.What kind of topics were databases expanding with progress made in gapped alignment particularly Smith Waterman as well as secondary structure prediction from Newsonov & Zukar discussing, according to Decades Overview.
+ A）Identifying domains in a protein or genes in genomes   
+ B）Transcription by RNA    
+ c）Translation through Germ Cells      
+ d）Discovering proteins' function    
+
+6. What does lecture seven primarily discuss? 
+a) Segmental Duplication Phenomenon        
+b-Towards Structural Biology                
+c:Protein Interaction Networks               
+d)Lecture seven doesn't exist  
+
+7.Which component is required for all members taking up “Course Project Component” ?
+a-Peer feedback                                            
+b-Cross-disciplinary team formation              
+c-Self-report evaluation                                                    
+d-Donation                                       
+
+
+8.How many exams are being conducted during this class?     
+	a- One                      
+	b-Easy                                                
+	c-Two                                                     	
+	d-Four                                           
+
+
+9.When did Systems Biology emerge ?                 
+	a-2000                              
+        b-1970                                 
+	c-1999                                     
+	d-1985                                    
+
+
+10.What do the next-gen/second-generation sequencing technologies transform biological research?
+a-Making genome sequencing possible              
+b-Synthetic biology             
+c-Gene Regulatory Network Modeling                
+d-Crowdsourcing                               
+
+Short Questions:
+1. What is required for team formation in Course Number 6874 project component?     
+2.How many assignments are there relating to Course Number 6874 projects and when should they be submitted by ?   
+3.Which topics are covered in course number "757" at MIT?
+
+Suggested Answers: 
+MCQs:  
+1.C         6.C          
+2 .C        7.B        
+3.A	        8.C           
+4.B      	9.A         
+5.A	       10.A         
+
+Short Questions:
+1. A brief statement of background and research interests.
+2. All assignments must be submitted before final written reports, problems set one due Thursday, February20th(Noon).
+3. Computational Systems & Synthetic Biology.
+
+Note : Corrected a mistake on Question#8's suggested answer from 'B' to 'C'.

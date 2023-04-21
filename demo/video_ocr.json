@@ -1,0 +1,334 @@
+[
+    {
+        "timeframe": 0,
+        "transcript": "Massachusetts Iii Institute OT Technology 7.91J, Spring 2014 Foundations of Computational and Systems Biology Profs. Christopher Burke, David Gifford, and Ernest Frankel Lecture 1: Introduction to Computational and Systems Biology MITOPENCOURSEWARE Massachusetts Institute of Technology BY-Nc-SA"
+    },
+    {
+        "timeframe": 10,
+        "transcript": "Some content in this video is not covered under our Creative Commons license: See the closing credits for more information."
+    },
+    {
+        "timeframe": 20,
+        "transcript": "Cold) 8"
+    },
+    {
+        "timeframe": 30,
+        "transcript": "Welcome to Foundations of Computational and Systems Biology 7.36/20.390/6.802 (undergrad version) and 7.91/20.490/6.874/HST.506 (grad version)"
+    },
+    {
+        "timeframe": 40,
+        "transcript": "Taught by Profs Chris Burke, Ernest Frankel, David Gifford and TAS Peter Freeze Colette Picard, Thin Syed with guest lectures by George Church (Harvard), Doug Lauffenburger; Ron Weiss with video recording by MIT's OCT"
+    },
+    {
+        "timeframe": 50,
+        "transcript": "7.91/20.490 and 6.874/HST.506 are graduate-level survey courses in computational biology target audience: graduate students with solid biology background and comfort with quantitative approaches 7.36/20.390 and 6.802 are upper-level undergraduate survey courses in computational biology target audience: upper-level undergraduates with solid biology background and comfort with quantitative approaches goal: to develop understanding of foundational methods in computational biology, to enable students to contextualize and understand the basis of a good portion of the research literature in this growing field, and gain exposure to research in this field* \"graduate versions only"
+    },
+    {
+        "timeframe": 60,
+        "transcript": "This course is not systems_biology class but topics important for analyzing complex systems will be presented synthetic biology class, but there will be a guest lecture related to synthetic biology an algorithms class* we do not assume prior expertise in designing or analyzing algorithms the essential ideas behind a variety of algorithms will be discussed, but we will not usually address details of implementation however, you will have an opportunity to implement at least one bioinformatics algorithm as part of homework ~Except 6.874, which includes additional Al content"
+    },
+    {
+        "timeframe": 70,
+        "transcript": "Plan for Today History of Computational and Systems Biology Review of Course Mechanics Organization Content"
+    },
+    {
+        "timeframe": 80,
+        "transcript": "Her Mensch ALS Jndustriepalast Brief, Anecdotal History of Computational and Systems Biology"
+    },
+    {
+        "timeframe": 90,
+        "transcript": "Overlapping Fields Computational Systems Informatics Biology Biology Biology Bioinformatics (Methods[TOC Using Computational Study of Molecular and Management-h Modeling/Analytical Cellular Systems analysis of Informal ton Approaches to Data) Address Biological Questions (Development of Methods for Analysis of Biological Data) 9 Study of Things 1] 1 [1 3 1 1 1 3 {Living"
+    },
+    {
+        "timeframe": 100,
+        "transcript": "The 1970s and Earlier Sequence Databases, Similarity Matrices and Molecular Evolution How do protein sequences evolve? How should similarity between two proteins be scored to most accurately detect homology? First protein sequence databases protein family classification PAM matrices for protein sequence comparisons (still used') Margaret Dabhol What can molecular sequences tell us about organismal evolution? Molecular classification of life Molecular clocks Use of ribosomal RNA to infer phylogeny Discovery of third domain of life Archaea Carl Worse Russ Doolittle"
+    },
+    {
+        "timeframe": 110,
+        "transcript": "Al Gore Learns to Search PubMed NCBI Director David Lip man (far left) coaches Vice President Gore (seated) as he searches PubMed. NIH Director Harold Var mus (center) and NLM Director Donald Lindberg (far right) look on. Homes Lalmhih%ut"
+    },
+    {
+        "timeframe": 120,
+        "transcript": "The '90s: MMS, Ab Initio Protein Structure Prediction, Genomics, Comparative Genomics How to identify domains in protein? How to identify genes in genome? Hidden Markov Models as a framework for such problems Andes Prof David Hassle How to study gene expression globally, infer gene function from expression? Microarrays and clustering Pat Brown How to predict protein function by comparing genomes? Gene fusions, phylogenetic profiling, etc. David Eisenberg How to predict protein structure directly from primary sequence? Rosetta algorithm David Baker"
+    },
+    {
+        "timeframe": 130,
+        "transcript": "The 2000s Part 1: The human genome is sequenced, assembled, annotated E. Lander; R Waters ton Watson. F Collins genomics becomes fashionable Jim Kent Craig Center Evan Barney"
+    },
+    {
+        "timeframe": 140,
+        "transcript": "The 2000s Part 2: Biological Experiments Become High-Throughput; Computational Biology Becomes more Biological Massively parallel data collection transcriptomics, proteomics, interactors, metagenomics Using sequence and array data to address fundamental questions about transcription, splicing, microRNA translation, epigenetics, protein structurelfunction, development;, evolution, disease, etc_ Integrated computationallexperimental approaches Rise of bioimage informatics"
+    },
+    {
+        "timeframe": 150,
+        "transcript": "Wt | 7u Lob Left Walk The 2000s Part 3 Systems Biology Models of gene and protein networks Eric Davidson in development; disease, etc. EUN PSJ Aka VCO Endoscopy BAX bad Via Viz V20 BAX BCL 2 BCL XL BAD: BAD VMI Van BAX BCL 2 BAD BCL-XL"
+    },
+    {
+        "timeframe": 160,
+        "transcript": "FG= JU ea Ill The 2000s Part 3 Systems Biology Models of gene and protein networks Eric Davidson in development;, disease, etc. Mini PSJ Aka VCO Encomium pax bad Via Viz V2e AZO BAX BCL 2 Ball BAD BAD VMI Van BAX BCL 2 BAD BCL XL Vie"
+    },
+    {
+        "timeframe": 170,
+        "transcript": "Le my Mot(4Uh The 2000s Part 3 Systems Biology Models of gene and protein networks Eric Davidson in development, disease, etc. En4 PSJ Aka VCO Encomium BAX bad V\u2019s Viz AZO BAX BCL 2 BCL-XL BAD BAD Vm]i Jo Van BAX\"BCL 2 BAD BCL XL Vie"
+    },
+    {
+        "timeframe": 180,
+        "transcript": "The 2000s Part 4: Synthetic Biology & Biological Engineering Design of regulatory networks using biological components Repressilator Reporter ~LA] MI PlacO1 K; amp tear Site de] teto1 k [B] Kane TetR King ASCII gfp-aav AP LCL origin cl Lack GFP '1 Mag-Lite Del ~all Cole climate P teto1 a[c] k[e] [p] Kc\" '%"
+    },
+    {
+        "timeframe": 190,
+        "transcript": "Late 2000s Early 2010s 0ot60/454 LI APC rolotulor Iron FCA Os DAmacalape bead Cloven ftion F thousand of cope Inn Flt related front #n e AEDTF'equal Ilemat1/50 441 Soft 064b Next-gen sequencing finds DNAmeraaps late applications across Cast DA RUD Genome sequencing Transcriptome sequencing Protein-DNA intrans (Chipset) Protein-RNA intrans (CLIP-seq) Translator Metzger NRG 2010 Methylate Open chromosome Barbara Wold biology"
+    },
+    {
+        "timeframe": 200,
+        "transcript": "For those who would like a proper history of the field HALL AA Stevens Life urta-uriven OUT OF HISTORY 0F BIOINFORMATiCS SEQUENCE Probe Halley Stevens Tam"
+    },
+    {
+        "timeframe": 210,
+        "transcript": "A look at the syllabus Topics: Genomic Analysis (CB) Genomic Analysis II 2nd Gen Sequencing (DG) Modeling Biological Function (CB) Proteomics (EF) Regulatory Networks (EF;, DG DL) Computational Genetics (DG) Guest lectures: Lauffenburger (signaling networks), Ron Weiss (synth George Church (geneticslgenomics) Topics will include a discussion of motivating questions, experimental methods and the interplay between experiment and computation Doug bio),"
+    },
+    {
+        "timeframe": 220,
+        "transcript": "Motivating Questions What instructions are encoded in our (and other) genomes? How are chromosomes organized? What genes are present? What regulatory circuitry is encoded? Can the transcriptome be predicted from the genome? Can the proteome be predicted from the transcriptome? Can protein function be predicted from sequence? Can evolutionary history be reconstructed from sequence?"
+    },
+    {
+        "timeframe": 230,
+        "transcript": "Course Schedule, Part | Alcott church Jopic44e4 epic course Introduction= History of Computational Biology: Overview of Course, Course Porkies and Abdul @NOON Just [cb0 Mechanic:DNA Sequencing Technology IHU Feb OIL Local A alignment (Asian Stanine; FTI Feb SL_ Reason Intercut Us Duo fab Gnomic Goal Alignment OT Protein scqucncsINuSMP GLOBULIN Analysis Elk_ Companies GonomitAntlinot GonoRceulnon Excel Canon TUC_[CB 12 no class No CHR; President Day PSL Que IU Feb2Q Libnmcomplexiyand BY FN Feb Re canon Genomic ICAM: Due FCB 250 Analyze Gcnoncazcmbl New[Gen IHU CBD Sequencing CHL?_Scquanali IDEA protein intonations) phi[cb2 Recitation Ma04 RNA TEQ_anti: (Expression_inform Model Modeling & Discount of Sequence Club: (Gibbs sample_aromatic Am: FIMU Canon TUC Mar 14 Modeling Lo Markov Hidden Markov Mock OT Gcnomicand Protein [nature; biological Po) Due M\u00fbmak? Functon RNA Secondary Structure _ Piobgralfuncuon: Prediction Full Reason JC LAR 481 EXAM Data In_ IPO Jew Quo"
+    },
+    {
+        "timeframe": 240,
+        "transcript": "Is this the right course for me? Other alternatives are available, some more specialized: 7,57 Quantitative Biology for Graduate Students (only for bio grad students) 81 Systems Biology (Gore) 6.581/20.482 Foundations of Algorithms and Computational Techniques in Systems Biology (Timor, White) 6.047/6.878 Computational Biology: Genomes, Networks, Evolution (Kelli's) 6.502/6.582/HST.949 Molecular Simulations (Stunt) 6.877/HST.949 Computational Evolutionary Biology (Berwick) 18.417 Introduction to Computational Molecular Biology (Waldispuhl) 18.418 Topics in Computational Molecular Biology (Berger) 10.555J Bioinformatics: Principles, Methods and Applications (Stephanopoulos, Ragouts)"
+    },
+    {
+        "timeframe": 250,
+        "transcript": "Text Book The following text is recommended (not required) for this course is available through Amazon and at the COOP and will be on reserve at Hayden library Understanding Bioinformatics, Zvelebil & Baum (Garland Science) This text contains helpful background information for some lectures and relevant chapters or sections will be mentioned from time to time However; we have also selected the following texts as particularly useful in selected areas, if you are looking for further information. Basic Probability and Statistics A primer covering basic concepts in probability and statistics that are useful for this class is available at the class website. The workbook is designed for students to complete at their own pace, anchor to use as a reference. It includes explanatory material and many examples drawn from biology. Students who have less background in these areas or need a refresher are strongly encouraged to read the primer and do the examples. Your will be able to answer questions about this material throughout the semester TAS"
+    },
+    {
+        "timeframe": 260,
+        "transcript": "Homework Five written Or cornputer-based homework assignments will be posted on the course website_ These are designed lo promote deeper understanding of The principles and algorithms discussed in class and to provide hands-on experience with bioinformatics tools Your score for the homework portion of the course will be based on maximum of 100 points, but The total points available on The ho reworks will be 120 This mares Ital You can miss Orly homework (or portion of Erie homework) and still do fairly viell on this component if you have done well on the other homework For example, student who obtained perfect marks On 4 of 5 homework each valued all 24 points would gel 96 points for The homework component of The course elitist as good as & student who completed all 5 hornworts, earning 90% of points on each 0.9* 120 108, which would earn the maximum score of 100. Because of this no make-up assignments Willie hollered Of course it is still to your advantage t0 do all five homework_ as this will you to learn THC material in more depth help prepare you for exams CTC Please note that the values of individual homework may vary somewhat from The 24 average value, depending on their length and level of difficulty. THC dates that THC assignments arc due arc included in THC syllabus below Homework must bc turned in to THC appropriate box outside the education office (68-120), or submitted on-line by the assigned time t0 be eligible for full credit_ Late assignments are due at noon on the dates indicated on the syllabus Assignments received electronically_ or in the appropriate box outside IOC Biology Education Office (68-120), within 24h of THC time they arc due will bc eligible for 50% credit. If necessary, you may bum in your written portion and your programming portion separately. For example_ if you turn in your written portion on time and your programming by the late due date, your written work will be eligible for full points, but programming will bc eligible for only SO of points You may not further subdivide your submissions Because answer keys will be posted_ homework Willie accepted after the extended deadline since help point. Biology\" IOC"
+    },
+    {
+        "timeframe": 270,
+        "transcript": "Collaboration on Problem Sets The goal of the problem sets is to reinforce the material and sometimes to explore a topic in greater depth You may talk with other students about the problems and work on them together. However, you should write Up your own solutions Copying someone else's solutions will not improve your understanding of the material and is not acceptable. Duplicate_Qr nearly identical homework from different students will receive a score of zero: This has happened. We notice Don't let it happen to you Collaboration on Programming _in Problem Sets You must write your own code on problem sets You may discuss the programming problems with other students_ The following two simple rules should make it clear what is not permitted: do not copy or reuse code from source (except the sample code provided) do not share your code with anyone else in the class Intellectual Honesty We hope and trust that academic misconduct will not occur during this course. We nevertheless want to emphasize that we be rigorous in our enforcement of Institute rules It is the policy of the Biology Department to keep a record of all cases of academic misconduct and to forward cases to the Dean of Undergraduate and Student Affairs. Any will"
+    },
+    {
+        "timeframe": 280,
+        "transcript": "Recitations Three recitation sections will be offered each week will be determined on the first of class. These will be led by the TAS and will provide students an opportunity to ask questions about material presented in lecture, the readings or the homework. Recitations are required for 6.874_optional for other_versions However; if you are having difficulty in class, you are strongly encouraged to attend regularly. 66-160 W4 (Peter) 56-162 R4 (Colette) 66-168 F4 (6.874 section led by Thin) Thin's recitation starts this week Peter & Colette's start next week Times day the"
+    },
+    {
+        "timeframe": 290,
+        "transcript": "Python Instruction The homework assignments will include problems that involve writing programs in the scripting language Python is widely used for bioinformatics and computational biology: Programming will not be taught in lecture_ but because some students may have little or no programming experience, hands-on tutorials in Python will be offered by the teaching assistants during the first and second weeks of classes Also, you may ask questions related to programming assignments at weekly recitations_ Be sure to attend recitation if you are struggling with the programming assignments There will be an 'Intro to Python session, targeting with little or no previous programming experience. Please bring a laptop if you have one Notes outlining the materials covered in these sessions, as well as short exercises designed to help you get up to speed (NOT for credit), are posted on Stellar: You are encouraged to look at these materials, especially \"Starting Python Programming\" before attending the introductory sessions_ those"
+    },
+    {
+        "timeframe": 300,
+        "transcript": "Project Component (7.91/20.490/6.874/HST.506 only) Students registered for one of the graduate versions of this course will also complete computational biology research project during the semester: There are 6 student assignments related to project component: 1) Submit backgroundlnterests for posting to course website 2) Choose Teams and submit Project Title and Paragraph Summary 3) Submit Specific Aims (1 page) 4) Submit Research Strategy (2 pages) 5) Submit Final Written report (~5 pages) 6) Oral presentations Due dates for these assignments_are listed on the course syllabus This Project component of this course is designed to give You practice in applying computational methods to contemporary problems in biology. Students design and carry out projects working in a group (maximum: 5 students, unless approved by instructor) or by themselves_ We suggest that you choose people to work with who have skills complementary to yours"
+    },
+    {
+        "timeframe": 310,
+        "transcript": "Al Course Project problems 7.36/20.390/6.802 NO NO 7.91/20.490/HST.506 YES NO 6.874 YES YES"
+    },
+    {
+        "timeframe": 320,
+        "transcript": "Exams/Grading/Honesty Exams There will be two 80-minute exams (non-cumulative) Exam dates are noted on the calendar below: Students are expected to take the exams at the scheduled times There is no final exam Grading Undergraduate_versions of course (6.802_7.36.20.3902; Homework (out of max 100 points): 36% Exams 62% Peer Review 2% Graduate Biome HHSLversions of course (Z9120.490_HSL5O6): Homework (out of max 100 points): 30% Exams 48% Project 20% Peer Review 2% Graduate EEC version of course (6.874: Homework (out of max 100 points): 25% Exams 48% Project 20% Extra Al-related problems 5% Peer Review 206 An additional 1 % extra credit may be awarded for exceptional class participation"
+    },
+    {
+        "timeframe": 330,
+        "transcript": "Topic 1 Announcements Set PSet1 will be posted tonight Due: Thurs Feb 20 noon involves basic molecular biology, probability/statistics Pset2 will be posted soon_ Look at the_programming problem to_gave_ YOU a feeling for the level of_programming that will be_needed ProbabilitylStats For review of basic probabilitylstatistics concepts related to the course, see Statistics Primer (posted) Sequencing Technologies Read Metzger review (posted) Reading on Sequence Alignment / Statistics Over the next several days, read Chapters 4, 5 of Z&B for background on sequence alignment"
+    },
+    {
+        "timeframe": 340,
+        "transcript": "Genomic Analysis | 57E Sequencing Technologies (L1/L2) Metzger 2010 Sequence searchlstatistics with BLAST (L2) NCBI (local untapped sequence alignment) BLAST P(S > x) =1 exp[-KMN e-Ax]"
+    },
+    {
+        "timeframe": 350,
+        "transcript": "Global Sequence Alignment (L3) MiR-1 8mer site In SLC3584 Human Gap -16 24 332 40 [Chimpanzee 188 Rhesus Burnaby 4s--12 -20 -28 Shrew Rabbit E 16 -6 -9 -17 Guinea pig Mouse Rat S 224 -6 Con Horse Cat L 32 22 -14 3 Hedgehog Shrew C 40 222 13 3 Armadillo Elephant 48 338 -15 23 Terry Opossum Platypus Chicken Lizard -Frog UAUGUAUGAAGAAAUGUAAGGU 5' miR-1 Branch Length 0.07 0.20 0.05 0.05 0 21 0.19 0.07 NNNNNACAUUCCA NNNN Human am smaller branch Lengths NNNNNACAUUCCANNNN Chimpanzee NNMMMACAUUCCANNNA Rhesus NNNNNACAUUCCUNNNN Rabbit NNNNNACAUUCCINNNN Cause Comparative Genomic Analysis of NNNNNACAIIUCCIINNNN RAI NNNNNUCAULICCUNNNN Cow Gene Regulation (L4) NNNNNCCAUUCCCNNNN _ Horse NNNNMCCAUUC ((NNN _ NNNNNCCAULIC ((NNNN Electoral Gap Too Dog 30 Do"
+    },
+    {
+        "timeframe": 360,
+        "transcript": "Modeling Biological Function Modeling & Discovery of Sequence Motifs (L9) EH EIG? Markov & Hidden Markov Models of Genomic and Protein Features (L10) four Often Let Fish Hatch"
+    },
+    {
+        "timeframe": 370,
+        "transcript": "Fold 0 05hr 0-M-Z- all > \u20ac pat Ma allele RNA Secondary Structure Biological Functions & Prediction (L11) Union ~Nehru T Tenney Flute VO_u(I We. Lieu 4 Trtxralc Errors plc; Pa P3 PS P2 Sequestering stem RBS AUG Anti- sequestering stem AUG Absence 0 lysine Presence of lysine ON state OFF state are("
+    },
+    {
+        "timeframe": 380,
+        "transcript": "Ft 7734 Ha Io 4.5"
+    },
+    {
+        "timeframe": 390,
+        "transcript": "Fb7737 lo 4-5"
+    },
+    {
+        "timeframe": 400,
+        "transcript": "Ce ) | No} lo 4-5 The"
+    },
+    {
+        "timeframe": 410,
+        "transcript": "Genomic Analysis Module Next Generation Sequencing"
+    },
+    {
+        "timeframe": 420,
+        "transcript": "DNA Sequencing Technology is improving more than exponentially Single molecule? 1,000,000,000- 100,000,000 Massively parallel sequencing 1 10,000,O00: Shortbread sequences 1,000,000 8 100,0000 Capillary sequencing Crowned Dyrosequencing 8 10,000 Gel-based systems 1,000 Second-generation L Automated Catalan sequence 100 Manual lb First-generation gab gel cap Leary 10 1980 1985 1990 1995 2000 2005 2010 Future Year help Genome welcome ac bloc_ WT X059576 horn 8 gels"
+    },
+    {
+        "timeframe": 430,
+        "transcript": "Idea Use DNA sequencing to measure diverse biological state information Cellular State Processing Read Out Genome Sequence (L6) RNA (L8) RNA > DNA Sequencing (L1) Protein-DNA Isolate specific Interactions protein(s) (L7) Purify associated DNA"
+    },
+    {
+        "timeframe": 440,
+        "transcript": "Genomic Analysis Module Next Generation Sequencing L5 How to index and process millions of DNA sequence reads using the Burrows-Wheeler Transform (BWT) to build genome indexes L6 How to assemble a reference genome sequence from 108 short sequence reads L7 How to discovery where regulatory proteins occupy the genome (Chipset analysis) L8 How to measure RNA expression and isoforms using high-throughput DNA sequencing (RNA-seq analysis)"
+    },
+    {
+        "timeframe": 450,
+        "transcript": "Reference genomes are assembled from millions of short reads (L6) Upon come dozen D) Sheared random fragments c) She fractionated Remnants 7 Roads Onto Seafood Sup cantos) LLP IMN k Tokyo ac ipppios-Al person/shining_Morita/ shining Conchita him"
+    },
+    {
+        "timeframe": 460,
+        "transcript": "Chipset reveals where key genomic regulators bind to the genome (L7) 34t : 14E40 KU; 8 Oct4 IP h 79 Whole-Cell Extract h Sox2"
+    },
+    {
+        "timeframe": 470,
+        "transcript": "RNA-seq reveals both RNA expression levels and isoforms (L8) Reads over exons Smug1 Junction reads (split between exons) 3791 I4 O215:"
+    },
+    {
+        "timeframe": 480,
+        "transcript": "Computational Genetics Module Understanding genome function in health and disease"
+    },
+    {
+        "timeframe": 490,
+        "transcript": "ATGCCGATCGTACGACACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGATCCATT TACTGACTGCATCGTACTGACTGCACATATCGTCATCGTACTGACTGTCTACTCTAAACACATCCCACATATCGTTTACCCC CATCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCAGCATCC CATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCTATGCCGATCGTACGACACATATCGTCATCGTACTGCCCTAC ACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTACTGACTGCATCGTACTGACTGCACATATCGTCATACATAG TCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCC ATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCT GCCGATCGTACGACACATATCGTCATCGTACTGCCCTACGGGACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCG TGACTGCATCGTACTGACTGCACATATCGTCATACATAGACTTCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGT CGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCCATGCATCGTACTGACTGTCTAGTCTAAACACATCCCACATATC ATCGTACTGACTGTCTAGTCTAAACACATCCCAGCATCCATCCATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCC GCCGATCGTACGACACATATCGTCATCGTACTGCCCTACGGGACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCG TGACTGCATCGTACTGACTGCACATATCGTCATACATAGACTTCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGI CGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCCATGATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCC TATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCTATACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCC GCCGATCGTACGACACATATCGTCATCGTACTGCCCTACGGGACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCG TGACTGCATCGTACTGACTGCACATATCGTCATACATAGACTTCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGT CGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCCATGATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCC TATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCTATAGCCGATCGTACGACACATATCGTCATCGTACTGCCCTACG CTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTACGCCGATCGTACGACACATATCGTCATCGTACTGCCCTACG CTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTACTGACTGCATCGTACTGACTGCACATATCGTCATACATAGA CGTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCCA ATCGTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCAGCATCCA ATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCTATGCCGATCGTACGACACATATCGTCATCGTACTGCCCTACG CTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTACGACTGCATCGTACTGACTGCACATATCGTCATACATAGAC GTACTGACTGTCTAGTCTAAACACATCCCACATATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCACTTTACCCAT ATCGTCATCGTACTGACTGTCTAGTCTAAACACATCCCACACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTA CGATCGTACGACACATATCGTCATCGTACTGCCCTACGGGACTGTCTAGTCTAAACACATCCATCGTACTGACTGCATCGTA"
+    },
+    {
+        "timeframe": 500,
+        "transcript": "Chromatin accessibility changes can reveal genome functional elements (L18) ES: 2: 3. 5. ~SOB Day Day Day"
+    },
+    {
+        "timeframe": 510,
+        "transcript": "Quantitative Trait Loci (QTLs) can predict phenotype (L19) 25 20 15- 8 10 N M b 2 10 11 12 13 14 15 16 MATURE V0L Than 10[] Finding the sources of missing heritability in a yeast cross Been VO[n I Levi\" Gujarat *"
+    },
+    {
+        "timeframe": 520,
+        "transcript": "WAS analysis can identify human variants associated with disease (L2O) Conan One Odd 6083 Cohn. Alamnalondetad Tue debele0 :a 0383 TCA ? 02806 7683 Chauennnmt Fault 4 Grow+Lorenzo*80dds Fur cdhelicadhn chromosome An thorn in Katina club kt daily. -with Late u !must Palace Jut quality ~@pafueaedtalaa40t NP-a during Pea bar<I*10 hachbahucJigan Alaska Ironclad 4 Not In (TU dlrakInJi EIT(duded tor fine for dustcringano lotaFluc! ~ although TME Martin aura In the MIMIC In Intention Plarduuinu pollen on \u20ac4h protozoic HD and RA faced Thai Hcnlflance threshold Nature Vol 44717 June ?0071 DOI 10 1038malui605911"
+    },
+    {
+        "timeframe": 530,
+        "transcript": "10 4-0 AU J67"
+    },
+    {
+        "timeframe": 540,
+        "transcript": "6i FD 7 34 Ma lo 4-.5"
+    },
+    {
+        "timeframe": 550,
+        "transcript": "Father Sol"
+    },
+    {
+        "timeframe": 560,
+        "transcript": "Modeling Scales Bond Kb(b 60)? Bonds Atom Protein Network"
+    },
+    {
+        "timeframe": 570,
+        "transcript": "Predicting Protein Structure (L13) chigualio Ion I We'CAG- 78i0 RAA 05e Val lit 1725 /6 Indian L0 A 0.6 / 35 14 r If 16 A 18 (0 JF4k 1a, 8/5 1 WW join IIJ7 _ NTL9 2986 + BBL -5 Protein 44F 2F21 124 21 = HBA 0PA 294 ZINC 4JA TRY JMA J95 Homcodomin J27 = violin (I3_ AJV 107 @> Wardress Nae I0 164 311 o 124 Zaj0 3A 27 L8 Lind 18 A 49 1a 00 67"
+    },
+    {
+        "timeframe": 580,
+        "transcript": "Predicting Protein Structure Man vs. Machine (L13) Che New Work Times In a Video Game, Tackling the Complexities of Protein Folding B)-Checkoff Published ALUs 2010 Gamers 1, computer 0. Enlarge This Image In a match that pitted video game players against the best known computer program designed for the task; the gamers outperformed the software in figuring out how 10 proteins fold into their three-dimensional configurations: HTTP Ifmr-micrel_deals uniboIt-beninutlest MDIAntonCommACMOA PDF 56 Arson"
+    },
+    {
+        "timeframe": 590,
+        "transcript": "Predicting Interactions (L14) Rad52 Cdk2 Cks1 CCA ERCC1 p27 FISH (p62 subunit) N. Punchbag 57 Mdm2 PDB: From\" LPDB From"
+    },
+    {
+        "timeframe": 600,
+        "transcript": "Gene Regulatory Networks (L15)"
+    },
+    {
+        "timeframe": 610,
+        "transcript": "Interaction Networks (L16) (Elma; (eye Sconce Mental DPMI Santa U Dixon et al. (2009) Annual Review of Genetics Vol. 43: 601-625 (DOI:10.1146lannurev Genet 39.073003.114751)"
+    },
+    {
+        "timeframe": 620,
+        "transcript": "Computable Models (L17) 0 01e 99991 08 9051 Guziolowski C et al. Bioinformatics 2013,29.2320-2326"
+    },
+    {
+        "timeframe": 630,
+        "transcript": "A problem Course Project 8 7.36/20.390/6.802 NO NO 7.91/20.490/HST.506 YES NO 6.874 YES YES"
+    },
+    {
+        "timeframe": 640,
+        "transcript": "Chen Scold"
+    },
+    {
+        "timeframe": 650,
+        "transcript": "Aachen Scale"
+    },
+    {
+        "timeframe": 660,
+        "transcript": "6i Fd734 M Io 4.5"
+    },
+    {
+        "timeframe": 670,
+        "transcript": "Father Sc Of"
+    },
+    {
+        "timeframe": 680,
+        "transcript": "6i Fd734 M Io 4-5"
+    },
+    {
+        "timeframe": 690,
+        "transcript": "Seen FM Archer US col;"
+    },
+    {
+        "timeframe": 700,
+        "transcript": "Father Col Jet \u20ac"
+    },
+    {
+        "timeframe": 710,
+        "transcript": "Via;/ T0 4 0"
+    },
+    {
+        "timeframe": 720,
+        "transcript": "KO Unto NT Aachen"
+    },
+    {
+        "timeframe": 730,
+        "transcript": "Each back I e Flu ("
+    },
+    {
+        "timeframe": 740,
+        "transcript": "Factor Scolded"
+    },
+    {
+        "timeframe": 750,
+        "transcript": "6i Fd734 Me Io 4-5"
+    },
+    {
+        "timeframe": 760,
+        "transcript": "Mo/ [0 4-5"
+    },
+    {
+        "timeframe": 770,
+        "transcript": "6i Fd7734 HU Io 4-5"
+    },
+    {
+        "timeframe": 780,
+        "transcript": "A\u20ac CGI"
+    },
+    {
+        "timeframe": 790,
+        "transcript": "6i 6t734 He lo 4-5"
+    },
+    {
+        "timeframe": 800,
+        "transcript": "The Motor CIA Y Sol Jet"
+    },
+    {
+        "timeframe": 810,
+        "transcript": "Sources of content the respective copyright holders, all rights reserved, excluded from our Creative Commons license. For more information, see HTTP:/ / Oct mit.edu/fairuse Image of Her Mensch ALS Industrialist by Fritz Khan Cosmos Overlap. WWW fritz-kahn com/ gallery/man-as-industrial-palace/ Photograph of Carl Worse NARA. Of Illinois Photographs f Russ Doolittle, Temple Smith and Michael Waterman, David Lip man, Bill Pearson, Webb Miller; Stephen Alachua, Samuel Carlin, Michael Zukor; Ruth Ustinov; Andes Prof, David Hassle; David Eisenberg, Pat Brown, David Baker; Jim Kent, Craig Center; Evan Barney, Eric Davidson, Barbara Wold, and Halley Stevens sources unknown Photograph of Eric Lander; Robert Waters ton, James Watson and Francis Collins. S Gaffe/AFP/Getty:"
+    },
+    {
+        "timeframe": 820,
+        "transcript": "Sources of content used with permission: Figure 2 from Hashed et al. courtesy of CIS Journal. Http: / /cis journal org/journalofcomputing/archive/vol3no6/vol3no6_9.pdf Figure 3 from Stratton et al. courtesy of Macmillan Publishers Limited. Http:/ /DX doi.org/10.1038/nature07943 Figure of the basic steps of genome assembly courtesy of Shining Morita. Http: / /WWW k.Tokyo.ac JP/pros-e/person/shining_Morita/shining Morita him Figures from Bloom et al. courtesy of Macmillan Publishers Limited HTTP:/ /DX doi.org/10.1038/naturel1867"
+    }
+]

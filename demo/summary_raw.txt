@@ -1,0 +1,230 @@
+[Course Overview]
+1. The course is called Foundations of Computational and Systems Biology.
+2. There are three undergraduate survey courses: 7.36, 20.390, and 6.802.
+3. There are four graduate-level survey courses: 7.91, 20.490, HST version (unspecified), and 6.874.
+4. Target audience for the graduate versions are students with a solid background in biology and comfort with quantitative approaches; target audience for the undergraduate versions are upper-level undergraduates with solid biology background and comfort with quantitative approaches.
+
+[Goals of Course]
+1.The goal of this course is to develop understanding of foundational methods in computational biology that will enable you to contextualize and understand a good portion of research literature in the growing field.
+2.For the graduate version, another goal is to help you gain exposure to research in this field through project components.
+
+[Differences between Graduate & Undergraduate Versions]
+1.There's one key difference between the graduate and undergraduate versions - there will be more advanced algorithm content covered by those taking course number "6874".
+2.Students who take "6874" will have special recitations covering more advanced algorithm content as well as special homework problems.
+
+[Guest Lecturers & TAs]
+1.Guest lecturers include George Church from Harvard towards end of semester; Doug Loffenberger on regulatory network section; Ron Weiss on synthetic biology
+2.Teaching assistants have expertise in computational biology as well as other quantitative areas like math/statistics
+[Genomic Analysis Module]
+1. The Genomic Analysis Module covers several topics, including:
+a. Indexing and processing millions of DNA sequence reads using the Burrows-Wheeler Transform (BWT) to build genome indexes.
+b. Assembling a reference genome sequence from 108 short sequence reads.
+c. Discovering where regulatory proteins occupy the genome through Chipset analysis.
+d. Measuring RNA expression and isoforms using high-throughput DNA sequencing (RNA-seq analysis).
+
+[Predicting Protein Structure]
+1. Predicting protein structure is covered in lecture L13.
+2. There have been attempts to use video games to tackle the complexities of protein folding, but machine learning algorithms are still more effective at predicting protein structures than humans.
+
+[Decades Overview]
+1.In the 70s, early computational biologists focused on comparing proteins for understanding their function, structure and evolution by developing amino acid substitution matrices like PAM series which are still used today
+2.Two big thinkers were Russ Doolittle and Carl Woz who analyzed ribosomal RNA sequences to study evolution; Carl Woz recognized that there was a subgroup of single-celled organisms closer to eukaryotes named RKS while Russ Doolittle contributed towards building systematics based on molecular level instead of phenotypic characteristics
+3.In the 80s databases started expanding with progress made in gapped alignment particularly Smith Waterman as well as secondary structure prediction from Newsonov & Zukar 
+4.The development of microarrays led computational biology expansion in the 90s driven partly by questions such as identifying domains in a protein or genes in genomes
+[Computational Challenges in Genome Sequencing]
+1. Genome sequencing became popular in the 2000s, allowing for larger organisms such as humans to be sequenced.
+2. Computational challenges arose with genome assembly and annotation.
+
+[High Throughput Data Analysis]
+1. Molecular biology shifted towards high throughput data analysis in the last decade.
+2. High throughput data allowed for profiling of all transcripts and proteins within a cell.
+3. Various groups used this data to study gene expression, transcription, splicing, microRNAs, translation and epigenetics.
+4. Bioimage informatics also became popular for developmental biology studies.
+
+[Systems Biology Developments]
+1. Systems biology emerged around 2000 with the development of gene regulatory network models by Eric Davidson.
+2. Synthetic biology was born with artificial gene networks programming cells to perform desired behaviour using repressilators.
+3. Late 2000s saw next-gen sequencing transform various applications including microbial genome sequencing and transcriptome sequencing among others.
+
+[Sequencing Technologies]
+1. Next-gen/second-generation sequencing technologies transformed biological research from making genome sequencing only possible at centres to individual labs being able to do it easily
+2.There are now methods available for mapping protein DNA interactions genome-wide like ChIP-seq or clip-seq which can map translated messages or methylated sites respectively
+[Course Topics]
+1. The course is divided into six topics, including genomic analysis one and two, modeling biological function, proteomics and protein structure, regulatory networks and computational genetics.
+2. Motivating questions will be discussed in each topic to understand the biological questions being addressed with these approaches.
+
+[Genomic Analysis One]
+1. Genomic analysis one covers classical computational biology such as global alignment.
+2. Experimental methods for sequencing will also be discussed along with statistical methods for estimating error rates of experimental methods.
+
+[Genomic Analysis Two]
+1. Genomic analysis two covers newer algorithms required for second generation sequencing due to standard algorithms not being fast enough.
+2. This includes tools for mapping protein DNA interactions genome-wide like ChIP-seq or clip-seq which can map translated messages or methylated sites respectively.
+
+[Biological Questions Addressed by Course Topics]
+1. Biological questions that will be addressed include understanding the instructions encoded in genomes, how chromosomes are organized and what genes are present.
+2. Other motivating questions include predicting transcripto from genome data, reconstructing evolutionary history from sequence data and discovering causes of diseases through systems biology approaches.
+
+[Extended Unit on Regulatory Networks]
+1. Ernest will cover most lectures on different types of regulatory networks while David and Doug give a lecture each.
+2.Guest lectures interspersed throughout the unit include Ron Weiss' talk on synthetic biology programming cells using repressilators among others
+[Course Project Component]
+1. Students will form teams of 1 to 5 members for the project component.
+2. A brief statement of background and research interests related to forming teams is required, which will be posted on a platform to facilitate cross-disciplinary team formation.
+3. The team and initial idea are due by February 25th, followed by aims and other components later.
+
+[Project Presentations]
+1. Teams doing the project component will present their results at an assigned time in front of the class.
+2. All students in the class are required to attend presentations and provide comments on them.
+3. Presentation feedback from peers may help with interpreting data or improving overall projects.
+
+[Exam Structure]
+1. There will be two exams during this course that are non-cumulative.
+2. Exam one covers topics taught by instructors David and Ernest while exam two predominantly covers topics taught by instructor Ernest along with additional guest lectures given throughout the course.
+
+[Assignments Due Dates]
+1. Assignments have specific due dates marked on the left side of each topic's title slide.
+2.Problem set one is due Thursday, February 20th at noon while all assignments relating to projects must be submitted before final written reports are turned in.
+
+[Topics Covered During Course]
+1.The six main topics covered include genomic analysis modules one and two, modelling biological function, proteomics/protein structure, regulatory networks as well as computational genetics
+2.Motivating questions relevant to these approaches such as understanding instructions encoded within genomes or discovering causes of diseases through systems biology approaches would also be discussed
+[Course Selection]
+1. MIT offers a variety of courses in computational systems, synthetic biology.
+2. Course 757 is only for biology grad students while the others listed are generally open to all.
+3. Some courses are more geared towards graduate or undergraduate students and some are more specialized.
+
+[Textbook]
+1. The textbook "Understanding Bioinformatics" by Svellebo and Bong is not required but covers about one-third of what will be taught in the course.
+2. It's good for topics such as local alignment, global alignment, scoring matrices which will be covered in upcoming lectures.
+3. Content from lecture, homeworks and recitation should take priority over the textbook content.
+
+[Probability and Statistics Primer]
+1. A primer on probability and statistics was developed specifically for this course a few years ago due to significant probability and statistics being present in earlier parts of the course.
+2. Common concepts include p-value, probability density function (PDF), probability mass function (PMF) cumulative distribution function (CDF).
+3.Common distributions include exponential distribution, Poisson distribution, extreme value distribution
+4.The TAs can help with any difficulties encountered when dealing with these concepts
+
+[Homeworks]
+1.There will be five problem sets that cover roughly one topic each except Pset 2 which covers two or three topics so it may be longer than usual
+2.Students who have conflicts with attending class can still earn full points if they complete all assignments worth up to 120 points total but maximum score achievable is capped at 100
+[Homework Policy]
+1. Students can earn up to 120 points for the five problem sets, but maximum score achievable is capped at 100.
+2. Missing one homework will not result in much of a penalty as long as students do well on four other assignments.
+3. Not all homeworks are worth the same number of points and have varying levels of difficulty and length.
+4. Late submissions within 24 hours after deadline will be eligible for a 50% credit, beyond that no points will be given.
+
+[Collaboration Policy]
+1. Collaboration on problem sets is allowed, but solutions must be written independently.
+2. Duplicate or near identical solutions found by TAs will receive zero marks.
+3. Similarly with programming, asking advice from friends is allowed but code should be written independently.
+
+[Recitations]
+1.Three recitation sections offered each week: Wednesday at 4pm (Peter), Thursday at 4pm (Colette) and Friday at 4pm (Tahin).
+2.Tahin's recitation has additional AI content required only for course version "6-874".
+3.Attending recitations optional but strongly recommended especially if having trouble in the course.
+
+[Programming Problem Sets]
+1.Pset2 contains significant programming problems so it's important to start learning soon if you don't already know how to program
+
+[Research Project Component]
+1. Graduate students will work incrementally towards a final research project, with feedback and help offered along the way.
+2. First assignment involves submitting background and interest for posting on course website to find other students with similar interests but different backgrounds.
+3. Students can choose their own projects as long as it is related to computational and systems biology, including analysis of publicly available data or data obtained during rotations/labs.
+4. Teams can consist of up to 5 people, working independently or together in teams of five; larger teams may be considered if discussed with instructors.
+5. Specific aims document (NIH-style) followed by two-page research strategy required before submission of final written report due at end of semester.
+
+[Exam Grading]
+1. Two non-cumulative exams covering first three topics and last three topics respectively are given during normal class time.
+2. Homeworks count for 36% out of maximum 100 points while exams count for 62%; peer review counts for remaining 2% in undergrad version
+3.Graduate bioBEHST versions have homework counting for only30%, exam countingfor48%,projectcountingfor20%andpeerreviewcountingfor2%
+4.EECS version has homework counting for25%,examcountingfor48%,projectcountingfor20%.Extra AI-related problems accountforsomeofthe markswhilepeerreviewcountsfortwo percent
+5.Outstanding class participation earns an additional one percent extra credit.
+
+[PSET One Announcement]
+1.Pset one posted tonight involving basic microbiology, probability,and statistics 
+
+[Sequencing Technologies]
+1. Next-gen sequencing technologies covered in lecture two, including Illumina 454 and PacBio.
+2. High-throughput DNA sequencing instruments allow for the production of hundreds of millions of sequence reads per experiment.
+
+[Local Alignment and BLAST]
+1. Lecture two covers local un-gapped sequence alignment, with a focus on BLAST as one of the most widely used tools in bioinformatics.
+2. Understanding how to evaluate significance of blast hits is important, described by extreme value distribution.
+
+[Global Alignment and Comparative Genomic Analysis]
+1. Lecture three covers global alignment and introducing gaps into sequence alignments using dynamic programming algorithms such as Needleman-Wench and Smith-Waterman.
+2. Lecture four focuses on comparative genomic analysis of gene regulation through using sequence similarity across genomes to infer location of regulatory elements like microRNA target sites.
+
+[Motif Finding and Markov Models]
+1.Lecture nine discusses motif finding - searching a set of sequences for common subsequence or similar subsequences that possess particular biological function like binding to protein- complex search space
+2.Gibbs sampling algorithm will be discussed along with some alternatives 
+3.Lecture ten talks about Markov models which can model linear sequence labeling problems
+
+[RNA Secondary Structure Prediction]
+1.Predicting RNA secondary structure from thermodynamic tools will be discussed in last lecture
+2.Comparative genomic approaches also mentioned 
+3.Enfold tool introduced 
+
+[Different Sequencing Applications] 
+1.DNA sequencing can be used to sequence own genome or favorite pet's genome (lecture six)
+2.Challenges involved include finding what has been sequenced; mapping out sequenced reads
+[RNA Sequencing]
+1. RNA sequencing involves converting RNA species into DNA using reverse transcriptase and then sequencing the DNA to understand the RNA complement of a cell.
+2. The RNA can be messenger RNA, structural RNAs or non-coding RNAs with other functions associated with chromatin.
+
+[Protein-DNA Interactions]
+1. Lecture seven covers protein-DNA interactions and how they regulate target genes.
+2. Proteins and their associated DNA fragments are isolated and sequenced using high-throughput technology to locate all regulatory factors associated with the genome in one experiment.
+
+[Genome Sequencing]
+1. Given a reference genome sequence and a basket of DNA sequence reads, an efficient index is built so that we can map or align those reads back to the reference genome (lecture five).
+2. Genome sequencing involves shattering intact chromosomes into pieces which are size-selected for sequencing before being assembled computationally (lecture six).
+
+[RNA Expression Analysis]
+1. Mapping RNA sequence reads back onto the genome allows us to determine gene expression levels as well as isoforms expressed.
+2. Split reads crossing splice junctions help identify exons included/excluded from transcripts.
+
+[Computational Genetics]
+1.Computational genetics summarises everything learned in this course into an applicable way to ask fundamental questions about genome function.
+2.Interpreting differences between genomes poses challenges but accurate computational models allow inference of function from genomic sequences by identifying active regions through different kinds of sequencing-based assays (lecture eight).
+[Genome Annotation]
+1. DNA-seq data can be used to annotate the genome with regulatory elements and understand the regulatory code of the genome.
+2. Computational methods are being developed to automatically identify regions of the genome that control traits and determine their significance.
+
+[Human Disease Variations]
+1. Genome-wide association studies yield insights into variants associated with human disease, but further research is needed to prove causality.
+2. Assigning variations in the human genome to differential risk for human disease raises questions about what best therapy would be applied.
+
+[Protein Structure Prediction]
+1. Recent advances have allowed us to predict protein structure from gene sequence using computational approaches or crowdsourcing.
+2. Accurate predictions of small protein structures have been achieved through a variety of approaches on a spectrum between special purpose hardware and crowdsourcing.
+
+[Protein Interaction Networks]
+1. The latter part of the course will cover proteins, protein interactions, and ultimately, protein interaction networks.
+2. Topics covered include intermolecular interactions at biophysics level, prediction of protein structure from gene sequence, and accurate predictions achieved through various approaches on a spectrum between special purpose hardware and crowdsourcing techniques
+[Protein Interaction Networks]
+1. Algorithms can predict protein-protein interactions, allowing us to understand how proteins function as a network.
+2. Protein-DNA interactions can be reconstructed at a regulatory level using computational approaches.
+
+[Interaction Network Analysis]
+1. Different types of interaction networks will be covered in the course, including genetic and other kinds of interaction networks.
+2. The course will cover computable models such as Boolean predictions and Bayesian networks for making specific predictions.
+
+[Course Mechanics]
+1. Undergraduate versions of the course do not have projects or artificial intelligence components.
+2. Graduate versions include projects but may not necessarily include AI components.
+3. Students should ensure they are enrolled in the correct version of the course to receive credit for appropriate assignments.
+
+[Q&A Session]
+1. It is possible for undergrad students to sign up for graduate-level courses with additional work required.
+2. There may be more questions on exams if taking the AI component, but this is subject to change.
+3. Switching between different versions of the class by ad drop deadline is possible but could result in missed work that cannot easily be made up later on.
+4. Students should carefully consider which version of the class they want to join before signing up due to potential difficulties switching between them later on
+[Course Content]
+1. AI problems are accessible to undergrad students even if the course sites remain separate.
+2. Course 6 rest stations should be sufficient for those taking both presentations, but they can attend both if desired.
+3. Normal rest stations do not introduce any new material in courses 20 and 7.
+
+[Q&A Session]
+1. The speaker will answer remaining questions after the normal rest station sessions end.

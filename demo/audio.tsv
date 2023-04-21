@@ -1,0 +1,1301 @@
+start	end	text
+0	2480	The following content is provided under a Creative
+2480	3880	Commons license.
+3880	6920	Your support will help MIT OpenCourseWare continue to
+6920	10560	offer high quality educational resources for free.
+10560	13480	To make a donation or view additional materials from
+13480	17400	hundreds of MIT courses, visit MIT OpenCourseWare at
+17400	18400	ocw.mit.edu.
+26320	28240	Welcome to Foundations of Computational
+28240	30320	and Systems Biology.
+30320	31720	This course has many numbers.
+31720	35400	Just we'll explain all the differences and similarities.
+35400	39600	But briefly, there are three undergrad course numbers,
+39600	44720	which are all similar in content, 736, 2390, 6802.
+44720	49440	And then there are four graduate versions.
+49440	55480	The 791, 2490, and HST versions are all very similar,
+55480	56960	basically identical.
+56960	62320	But the 6874 has some additional AI content that we'll
+62320	64400	discuss in a moment.
+64400	67240	So make sure that you are registered for the
+67240	71160	appropriate version of this course.
+71160	75680	And please interrupt with questions at any time.
+75680	79280	The main goal today is to kind of give an overview of the
+79280	84160	course, both the content as well as sort of the mechanics
+84160	85560	of how the course will be taught.
+85560	88280	And we want to make sure that everything is clear.
+88280	92000	So this course is taught by myself, Chris Burge from
+92000	96400	Biology, Professor Frankel from BE, and Professor Gifford
+96400	98920	from EECS.
+98920	105840	We have three TAs, Peter Fries, and Collette Picard from
+105840	111920	Computational and Systems Biology, and Tahin from EECS.
+111920	114880	All the TAs have expertise in computational biology as well
+114880	120640	as other quantitative areas like math, statistics,
+120640	122320	computer science.
+122320	125040	So in addition to the lectures by the regular instructors,
+125040	129400	we'll also have guest lectures by George Church from
+129400	132520	Harvard toward the end of the semester.
+132520	136080	Doug Loffenberger will give a lecture in the
+136080	138440	regulatory network section of the course.
+138440	141680	And we'll have a guest lecture from Ron Weiss on
+141680	143080	synthetic biology.
+143240	146160	And so just to note that today's lecture and all the
+146160	151160	lectures this semester are being recorded by Amps, by
+151160	152960	MIT's OpenCourseWare.
+152960	156080	So the videos, after a little bit of editing, will
+156080	159200	eventually end up on OpenCourseWare.
+159200	159960	What are these courses?
+159960	165880	So these course numbers are the graduate level versions,
+165880	169160	which are survey courses in computational biology.
+169160	172680	Our target audience is graduate students who have a solid
+172680	177760	background and background in biology, and also a
+177760	181160	comfort with quantitative approaches.
+181160	183520	We don't assume that you've programmed before, but there
+183520	188040	will be some programming content on the homeworks, and
+188040	192480	you will therefore need to learn some Python programming.
+192480	196280	And the TAs will help with that component of the course.
+196280	199800	We also have some online tutorials on Python
+199800	202280	programming that are available.
+202280	205960	The undergrad course numbers, this is an upper level
+205960	208800	undergraduate survey course in computational biology.
+208800	213480	And our target audience are upper level undergraduates with
+213480	215520	solid biology background and comfort with
+215520	216440	quantitative approaches.
+216440	219480	So there's one key difference between the graduate and
+219480	222560	undergraduate versions, which I'll come to in a moment.
+222560	225920	So the goal of this course is to develop understanding of
+225920	229120	foundational methods in computational biology that
+229120	233760	will enable you to contextualize and understand a good
+233760	236000	portion of research literature in the growing field.
+236000	238840	So if you pick up science or nature or
+238840	243440	post-computational biology, and you want to read those
+243440	245640	papers and understand them, after this course, you will
+245640	247000	have a better chance.
+247000	249560	We're not guaranteeing you'll be able to understand all
+249560	254240	them, but you'll be able to recognize perhaps the
+254240	256960	category of paper, the class, and perhaps some of the
+256960	260600	algorithms that are involved.
+260600	265760	And for the graduate version, another goal is to help you
+265760	267360	gain exposure to research in this field.
+267360	270760	So it's actually possible to do a smaller scale
+270760	273080	computational biology research project on your own, on your
+273080	277680	laptop, perhaps on Athena with relatively limited
+277680	280880	computational resources, and potentially even discover
+280880	282200	something new.
+282200	284720	And so we want to give you that experience.
+284720	287520	And that's through the project component that we'll say
+287520	289280	more about in a moment.
+289280	292240	So just to make sure that everyone's in the right class.
+292240	295840	So this is not a systems biology class.
+295840	298040	There are some more focused systems biology classes
+298040	298960	offered on campus.
+298960	302120	But we will cover some topics that are important for
+302120	304400	analyzing complex systems.
+304400	308160	There's also certainly not a synthetic biology course.
+308160	311200	Some of the systems methods are also used in synthetic
+311200	312040	biology.
+312040	314440	And there will be this guest lecture mentioned
+314440	318040	Ron Weiss, which will cover synthetic biology.
+318040	320560	It's also not an algorithms class.
+320560	323560	We don't assume that you have experience in designing or
+323560	325320	analyzing algorithms.
+325320	328240	We'll discuss various bioinformatics algorithms.
+328240	331840	And you'll have the opportunity to implement at least one
+331840	336080	bioinformatics algorithm on your homework.
+336080	339640	But it's not, algorithms are not really the center of the
+339640	339960	course.
+339960	342760	And there's one exception to this, which is those of you
+342760	346320	who are taking 6, 8, 7, 4, will go to a special recitation
+346320	350320	that will cover more advanced algorithm content.
+350320	353440	And there will be special homework problems for you as
+353440	353640	well.
+353640	358200	So that course really does have more algorithm content.
+358200	361600	So the plan for today is that I will just do a brief sort
+361600	363560	of anecdotal history of computational
+363560	366360	and systems biology to sort of set the stage and the
+366360	367640	context for the class.
+367640	371400	And then we'll spend a significant amount of time
+371440	375120	reviewing the course, mechanics, organization, and content.
+375120	377960	Because as you'll see, it's a little bit complicated, but
+377960	382520	it all makes sense once we go over it, hopefully.
+382520	386960	So this is my sort of just my take on computational
+386960	387560	systems biology.
+387560	389880	Again, it's not a scholarly overview.
+389880	392760	It doesn't hit everything important that happened.
+392760	396840	It just sort of gives you a flavor of what was happening
+396920	401880	in computational biology, sort of decade by decade.
+401880	408040	So first of all, where does this field fall, sort of in the
+408040	409480	academic scheme of things?
+409480	415000	So I consider computational biology to be actually part of
+415000	415600	biology.
+415600	421160	So in the way that genetics or biochemistry are disciplines
+421160	424400	that have strategies for understanding biological
+424400	427040	questions, so does computational biology.
+427040	429840	You can use it to understand a variety of computational
+429840	434920	questions in gene regulation, many of their areas.
+434920	439360	There is also some people make a distinction that biopharmatics
+439360	443840	is more about building tools, whereas computational biology
+443840	447320	is more about using tools, for example, although many
+447320	450480	people don't, it's very blurry and don't try to, you know,
+450480	453320	people use them in various ways.
+453320	455240	And then you could think of biopharmatics as being
+455240	459600	embedded in the larger field of informatics where you include
+459600	463280	tools for management and analysis of data in general.
+463280	467640	And certainly through that, many of the core concepts and
+467640	471120	algorithms in biopharmatics come from the field, you know,
+471120	474040	come from computer science, come from other branches of
+474040	477600	engineering from statistics, mathematics, and so forth.
+477600	479640	So it's really a cross-disciplinary field.
+479640	483080	And then synthetic biology sort of cuts across in the sense
+483080	486000	that it's really an engineering discipline, because
+486000	488920	you're designing and engineering synthetic molecular
+488920	491960	cellular systems, but you can also use synthetic biology to
+491960	496160	help understand natural biological systems, of course.
+496160	498880	All right, so what was happening decade by decade?
+498880	503840	So in the 70s, there were not genome sequences available or
+503840	506640	large sequence databases of any sort, except there were
+506640	508320	starting to be some protein sequences.
+508320	512520	And early computational biologists focused on comparing
+512520	517840	proteins, understanding their function, structure, and
+517840	518360	evolution.
+518360	522280	And so in order to compare proteins, you need a protein,
+522280	525760	a amino acid substitution matrix, a matrix that describes
+525760	528680	how often one amino acid is substituted for another.
+528680	531760	And Margaret Dayhoff was a pioneer in developing these
+531760	532560	sorts of matrices.
+532560	535760	And some of the matrices she developed, the PAM series,
+535760	536720	are still used today.
+536720	541000	And we'll discuss those matrices early next week.
+541080	545400	So in terms of asking evolutionary questions, two big
+545400	551800	thinkers were Russ Doolittle and Carl Woz, analyzing both
+551800	554960	ribosomal RNA sequences to study evolution.
+554960	558960	And Carl Woz realized, looking at these RNA alignments, that
+558960	562360	actually the prokaryotes, which had been, there was this big
+562360	564800	split between prokaryotes and eukaryotes, was sort of a
+564800	567880	false split, but actually there was a subgroup of single
+567880	572560	celled a nuclear organisms that were closer to the eukaryotes
+572560	573960	and named them the RKS.
+573960	576280	So a whole sort of kingdom of life was recognized really
+576280	578400	by sequence analysis.
+578400	582400	And Russ Doolittle also did a lot of analysis approaching
+582400	584680	sequences and sort of came up with this sort of molecular
+584680	586840	clock idea.
+586840	590840	Or anyway, contributed to that idea to actually build,
+590840	593720	instead of systematics being based on phenotypic
+593720	597800	characteristics, do it on a molecular level.
+597800	600800	So in the 80s, the databases started to expand.
+600800	604040	Sequence alignment and search became more important.
+604040	609000	And various people developed fast algorithms to compare
+609000	612560	protein and DNA sequences and align them.
+612560	616200	So the FAST-A program was widely used, BLAST.
+616200	617800	Several authors of BLAST are shown here.
+617800	621600	Dave Lipman, Pearson, Lev Miller, Stephen Altschill.
+621600	625640	The statistics for knowing when a BLAST search result is
+625680	628160	significant or developed by Carlin and Altschill.
+628160	632200	And there was also progress in gapped alignment, particularly
+632200	636520	Smith Waterman, shown above, also progress in RNA,
+636520	640320	secondary structure prediction from Newsonov and Zukar.
+640320	644800	We'll talk about all of these algorithms during the course.
+644800	648120	And there was also development of literature databases.
+648120	649920	I always like this picture.
+649920	653800	Many of you probably used PubMed, but Al Gore was well
+653800	657560	coached here by these experts on how to use it.
+657560	661840	And then in the 90s, computational biology really
+661840	662800	started to expand.
+662800	666080	It was driven partly by the development of microarrays,
+666080	670320	the first genome sequences, and questions like how to
+670320	673640	identify domains in a protein, how to identify genes in the
+673640	678400	genome, where it was recognized that this family of models
+678400	683040	from electrical engineering, the hidden markup model, were
+683040	685800	quite useful for these sort of sequence labeling problems.
+685800	689320	That was really pioneered by Anders Krobe here and David
+689320	690280	Hausler.
+690280	693600	And a variety of algorithms were developed that performed
+693600	697080	these useful tasks.
+697080	700960	There's also important progress in the earliest
+700960	703720	comparative genomic approaches.
+703720	707080	Since the first genomes were sequenced in the mid-90s of
+707080	709720	free-living organisms, and so you could then start to
+709720	711400	compare these genomes and learn a lot.
+711400	714200	We'll talk a little bit about comparative genomics.
+714200	718200	And there was important progress on predicting protein
+718200	722120	structure from primary sequence, particularly David Baker
+722120	725080	made notable progress on this Rosetta algorithm.
+725080	728040	So it's sort of a biophysics field, but it's very much
+728040	732320	part of computational biology as well.
+732320	738400	So in the 2000s, definitely genome sequencing became very
+738400	741560	fashionable, as you can see here.
+741560	749760	And the genomes of now larger organisms, including human,
+749760	751480	became possible to sequence them.
+751480	754320	And then this introduced a huge host of computational
+754320	757680	challenges in assembling the genomes, annotating the
+757680	758520	genomes, and so forth.
+758520	763240	And we'll hear from Professor Gifford about some genome
+763240	764560	assembly topics.
+764560	767760	And annotation will come up throughout.
+771360	776120	Actually, as I just mentioned, this is Jim Kent, who did
+776120	778720	the first human genome assembly that was widely used and
+778720	780960	also involved in UCSC.
+780960	787160	And here, Ewan Berni has started ensemble and continues to
+787160	789080	run it today.
+789080	790800	You know that these other people are from.
+790800	792000	OK.
+792000	799520	All right, so in another phase of the last decade, I would
+799520	805720	say that much of biological research became sort of more
+805720	807560	high throughput than it was before.
+807560	810120	So molecular biology had traditionally, in the 80s and
+810120	813520	90s, mostly focused on analysis of individual gene
+813520	815360	of protein products.
+815360	818960	But now, it became possible and sort of in widespread use
+818960	822400	that you could measure the expression of all the genes
+822400	825960	in theory using micro arrays, for example, and you could
+825960	829880	start to profile all of the transcripts in the cell, all
+829880	833640	of the proteins in the cell, and so forth.
+833640	836440	And then a variety of groups started to use some of these
+836440	840320	high throughput data to study various challenges in gene
+840320	843880	expression, to understand how transcription works, how
+843880	847480	splicing works, how microRNAs work, translation, epigenetics,
+847480	847920	and so forth.
+847920	854960	So you'll hear updates on some of that work in this course.
+854960	859040	Bioimage informatics, particularly for developmental
+859040	862600	biology, became popular, continues to be sort of a new
+862600	865280	emerging area.
+865280	871280	Systems biology was also really sort of born around 2000,
+871280	874960	roughly sort of a very prominent example would be the
+874960	879840	development of the first gene regulatory network models
+879840	883840	that describe sea urchin development here by Eric Davidson,
+883840	889000	as well as a whole variety of models of other gene networks
+889000	891720	in the cell that control things like cell proliferation,
+891720	896680	apoptosis, et cetera.
+896680	902440	At the same time, a new field of synthetic biology was born
+902440	905960	with the development of some of the first completely
+905960	909640	artificial gene networks that would then
+909640	914240	program cells to perform desired behavior.
+914240	916840	So an example would be this so-called repressilator,
+916840	920080	where you have a network of three transcription factors,
+920080	922880	each represses the other, and then one of them
+922880	924240	represses GFP.
+924240	927440	And you put these into bacteria, and it causes oscillations
+927440	931840	in GFP expression that are described by these differential
+931840	933440	equations here.
+933440	938040	And some of the modeling approaches used in synthetic biology
+938040	942000	will be covered by Professor Frankl and Loffenberg
+942000	944200	related.
+944200	946600	All right, so late 2000s, early 2010s,
+946600	949560	it's still too early to say for sure
+949560	953040	what the most important developments will be.
+953040	958120	But certainly in the late 2000s, next-gen sequencing,
+958120	960280	which now probably should be called second-generation
+960280	964280	sequencing since there may be future generations,
+964280	969000	really started to transform a whole wide variety
+969000	973120	of applications in biology from making genome sequencing.
+973120	975040	Instead of having to be done at a genome center,
+975040	978640	now an individual lab can easily do microbial genome sequencing.
+978640	981600	And when needed, it's possible also
+981600	985160	to do genome sequencing of larger organisms.
+985160	988960	Transcriptome sequencing is now routine.
+988960	991200	You'll hear about that.
+991200	995480	There are applications for mapping protein DNA interactions
+995480	998240	genome-wide, including both sequence-specific transcription
+998240	1001840	factors, as well as more general factors like histones,
+1001840	1004760	protein RNA interactions, method called clip-seq,
+1004760	1007840	methods for mapping all the translated messages,
+1007840	1010680	the methylated sites in the genome,
+1010680	1012720	open chromatin, and so forth.
+1012720	1014040	So many people contributed to this.
+1014040	1018760	Obviously, just mentioning Barbara Wold was a pioneer
+1018760	1023280	in both RNA-seq, as well as ChIP-seq.
+1023280	1025720	And some of the sequencing technologies
+1025720	1029400	that came out here are shown here.
+1029400	1032840	And we will discuss those at the beginning of lecture
+1032840	1033880	on Thursday.
+1033880	1036960	So I encourage you to read this review here by Metzger,
+1036960	1041080	which covers many of the newer sequencing technologies.
+1041080	1042840	And they're pretty interesting, as you'll see.
+1042840	1045920	There's interesting tricks, interesting chemistry
+1045920	1049760	and image analysis tricks.
+1049760	1053560	All right, so that was not very scholarly.
+1053560	1056480	But if you want a sort of a proper history,
+1056480	1058680	then this guy, Hellem Stevens, who
+1058680	1061840	is a history of science PhD student at Harvard
+1061840	1065400	and recently graduated, wrote this history
+1065400	1066800	of bioinformatics.
+1069920	1071280	So let's look at the syllabus.
+1071280	1075920	So also, post of a seller's site is syllabus.
+1075920	1077320	Looks like this.
+1077320	1080400	This is quite an information-rich document.
+1080400	1083480	It has all the lecture titles, all the due dates of all
+1083480	1084840	the problem sets and so forth.
+1084840	1086920	So please, you know, print yourself a copy
+1086920	1089400	and familiarize yourself with it.
+1089400	1093560	So we'll just sort of try to look at a high level first
+1093560	1095960	and then sort of zoom in to the details.
+1095960	1100600	So at a high level, if you look in this column here,
+1100600	1106200	we've sort of broken the course into six different topics.
+1106200	1111720	So there's genomic analysis one that I'll be teaching, which
+1111720	1114440	is sort of more classical computational biology,
+1114440	1119880	you could say, global alignment and so forth.
+1119880	1122200	Then genomic analysis two, which Professor Gifford
+1122200	1125000	will be teaching, covers some newer methods that
+1125000	1127880	are required when you're doing a lot of second generation
+1127880	1131560	sequencing, the standard algorithms are not fast enough.
+1131560	1136040	You need better algorithms and so forth.
+1136040	1141600	And then I will come back and give a few lectures
+1141600	1143240	on modeling biological function.
+1143240	1146680	This will have to do with sequence motifs, hidden markup
+1146680	1149480	models, and RNA secondary structure.
+1149480	1151800	Professor Frankl will then do a unit on proteomics
+1151800	1153240	and protein structure.
+1153240	1158120	And then there will be an extended unit on regulatory networks.
+1158120	1159360	Different types of regulatory networks
+1159360	1161680	will be covered with most of the lectures
+1161680	1167080	by Ernest and one by David and one by Doug.
+1167080	1172480	And then we'll finish up with computational genetics by David.
+1172480	1177040	And there will also be some guest lectures,
+1177040	1179200	one of them interspersed in regulatory networks,
+1179200	1183800	and then two at the end from Ron Weiss and George Church.
+1183800	1189160	So I just wanted to point out that in all of these topics,
+1189160	1192640	we will include some discussion of motivating questions.
+1192640	1193880	So what are the biological questions
+1193880	1196800	that we're seeking to address with these approaches?
+1196800	1199640	And there will also be some discussion
+1199640	1201120	of the experimental methods.
+1201120	1202960	So for example, in the first unit,
+1202960	1204680	it's having on sequence analysis.
+1204680	1208280	So we'll talk about how sequencing is done.
+1208280	1212480	And then quite a bit about the interaction
+1212480	1214840	between the experimental technology
+1214840	1216800	and the computational analysis, which
+1216800	1219520	is often involves statistical methods
+1219520	1221680	for estimating the error rate of the experimental method
+1221680	1223760	and things like that.
+1223760	1225720	So the emphasis is on the computational part,
+1225720	1231920	but we'll have some discussion about experiments.
+1231920	1233560	Everyone with me so far, any questions?
+1239280	1242040	All right, so what are some of these motivating questions
+1242040	1243440	that we'll be talking about?
+1243440	1246480	So what are the instructions encoded
+1246480	1248480	in our genomes?
+1248480	1250760	You know, I could think of the genome as sort of a book,
+1250760	1252600	but it's in this very strange language.
+1252600	1256520	And we need to understand the rules, the code,
+1256520	1261760	that sort of underlies a lot of research in gene expression.
+1261760	1263680	How are chromosomes organized?
+1263680	1265240	What genes are present?
+1265240	1267840	So tools for annotating genomes.
+1267840	1270200	What regulatory circuitry is encoded?
+1270200	1273480	You'd like to be able to eventually look at a genome,
+1273480	1275600	understand all the regulatory elements
+1275600	1277440	and be able to predict that there's
+1277440	1279880	some feedback circuit there that
+1279880	1283680	responds to a particular stimulation that
+1283680	1286080	responds to light or nutrient deprivation
+1286080	1288240	or whatever it might be.
+1288240	1290240	Can the transcripto be predicted from the genome?
+1290240	1293040	This is sort of a long standing question.
+1293040	1297800	The translatome, if you will, let's say the proteome
+1297800	1301280	can be predicted from the transcriptome in the sense
+1301280	1306760	that we have a genetic code and we can look up those triplets.
+1306760	1309120	So there's sort of a dream that we
+1309120	1313560	would be able to model other steps in gene expression
+1313560	1317880	with the precision with which the genetic code predicts
+1317880	1319720	translation, that we'd be able to predict
+1319720	1322080	where the polymerase would start transcribing,
+1322080	1323680	where it will finish transcribing,
+1323680	1328880	how a transcript will be spliced, et cetera,
+1328880	1333920	all the other steps in gene expression.
+1333920	1337480	And that motivates a lot of work in the field.
+1337480	1339560	Can protein function be predicted from sequence?
+1339560	1343240	So this is a very, very classical problem,
+1343240	1346720	but there are a number of new and interesting developments
+1346720	1350640	as sort of results from a lot of this high throughput
+1350640	1354040	data generation, both in nucleic acid sequencing
+1354040	1356800	as well as in proteomics.
+1356800	1359520	Can evolutionary history be reconstructed from sequence?
+1359520	1363760	Again, this has been a long standing goal of the field.
+1363760	1365720	And a lot of progress has been made here in now.
+1365720	1368400	Most evolutionary classifications
+1368400	1372040	are actually based on molecular sequence at some level.
+1372040	1378720	And new species are often are defined based on sequence.
+1378720	1379800	OK.
+1379800	1381200	Other motivating questions.
+1381200	1383880	So what would you need to measure if you
+1383880	1385960	wanted to discover the causes of a disease,
+1385960	1388760	the mechanisms of existing drugs, metabolic pathways,
+1388760	1389560	and microorganisms?
+1389560	1391960	This is sort of a systems biology question.
+1391960	1393360	You've got a new bug.
+1393360	1396040	It causes some disease.
+1396040	1397000	What should you measure?
+1397000	1398080	Should you sequence its genome?
+1398080	1399960	Should you sequence its transcriptome?
+1399960	1401520	Should you do proteomics?
+1401520	1403280	What type of proteomics?
+1403280	1408360	Should you perturb the system in some way and do a time series?
+1408360	1412080	What are the most efficient ways, what information
+1412080	1414200	should be gathered, and in what quantities,
+1414200	1417800	and how should that information be integrated in order
+1417800	1421160	to come up with an understanding of the physiology
+1421160	1424600	of that organism so that then you can know where to intervene,
+1424600	1426440	what would be suitable drug targets?
+1430480	1430680	Yeah.
+1430680	1431800	What kind of modeling would help you
+1431800	1433560	to use the data to design new therapies,
+1433560	1436920	or even in a sort of a synthetic biology context
+1436920	1440040	to re-engineer organisms for new purposes,
+1440040	1445760	so microbes to produce fuel, for example,
+1445760	1449800	or other useful products?
+1449800	1451680	What can we currently measure?
+1451680	1455320	What does each type of data mean individually?
+1455320	1456640	What are sort of the strengths and weaknesses
+1456640	1460000	of each of the types of high throughput approaches
+1460000	1461600	that we have?
+1461600	1465160	And how do we sort of integrate all the data
+1465160	1466920	we have on a system to understand
+1466920	1467960	the functioning of that system?
+1467960	1470640	So these are sort of some of the questions that
+1470640	1476720	motivate the latter topics on regulatory networks.
+1476720	1481840	So let's now zoom in and look more closely at the core syllabus.
+1481840	1484480	I've just broken it into two halves
+1484480	1488520	just so you can see that it's more readable.
+1488520	1491440	So today, we're going over, obviously,
+1491440	1492920	of course, mechanics, mostly.
+1497120	1501160	I'm sorry, on Thursday, we'll cover both some DNA sequencing
+1501160	1504000	technologies, and we'll talk about local alignment blast,
+1504000	1506720	more on that in a bit.
+1506720	1515240	There's one of the 6.8.047 recitation 6.874.
+1515240	1516280	Thank you.
+1516280	1519280	Recitation will be on Friday.
+1519280	1521400	The other recitations will start next week.
+1521400	1525600	And then, as you can see, we'll move
+1525600	1527320	through the other topics.
+1527320	1528480	So each of the instructors is going
+1528480	1531480	to briefly review their topic.
+1531480	1534200	So I won't go through all the titles here.
+1534200	1538000	But please note on the left side here
+1538000	1541920	that their assignment due dates are marked.
+1541920	1545560	And they're all due at noon on the indicated day.
+1545560	1548200	And so some of these are problem sets.
+1548200	1549920	So for example, problem set one will
+1550000	1553400	be due on Thursday, February 20th at noon.
+1553400	1556920	And some of the other assignments
+1556920	1560120	relate to the project component of the course, which
+1560120	1562640	we're going to talk more about in a moment.
+1562640	1565000	In particular, we're going to ask
+1565000	1570920	you to submit your brief statement of your background
+1570920	1574640	and your research interests related to forming teams.
+1574640	1578040	So that the projects are going to be done in teams of 1
+1578040	1579320	to 5 students.
+1579320	1583920	And in order to facilitate, especially
+1583920	1587840	cross-disciplinary teams, if you interact with them,
+1587840	1591240	maybe students in a different grad program or whatever,
+1591240	1594360	you'll post your background.
+1594360	1596360	I'm a first year BE student.
+1596360	1599240	And I have a background in Pearl programming,
+1599240	1602520	but never done Python or whatever, something like that.
+1602520	1605640	And then I'm interested in modeling,
+1605640	1607760	and doing systems biology, modeling
+1607760	1610400	in microbial systems or something like that.
+1610400	1612840	And then you can match up your interests with others
+1612840	1614000	and form teams.
+1614000	1617880	And then you'll come up with your own project ideas.
+1617880	1619840	So the team and initial idea will
+1619840	1624040	be due here, February 20, 25th.
+1624040	1627960	Then you'll need to do some aims and so forth.
+1627960	1630400	So the project components here, these
+1630400	1633880	are only for those taking the grad version of the course.
+1633880	1636280	We'll make that clear later.
+1636280	1640280	So after the first three topics here,
+1640280	1646160	taught by myself and David, there will be an exam,
+1646160	1647200	more on that later.
+1647200	1651000	And then there will be three more topics, mostly taught
+1651000	1658400	by Ernest and notice their additional assignments here
+1658400	1660360	related to the project, such a research strategy
+1660360	1665480	and the final written report, additional problem sets.
+1665480	1668360	We'll have a guest lecture here.
+1668360	1670800	This will be Ron Weiss.
+1670800	1673760	Then there will be the second exam.
+1673760	1676200	Exams are non-cumulative, so the second exam
+1676200	1682440	will discover these three topics here, and predominantly.
+1682440	1686240	And then there will be another guest lecture.
+1686240	1688360	This would be George Church here.
+1688360	1690440	And then notice here presentations.
+1690440	1695280	So those who are doing the project component,
+1695280	1699240	those teams will be assigned a time
+1699240	1703520	to present to the class the results of their research.
+1703520	1707480	And you'll be graded.
+1707480	1708920	I mean, the presentation will be sort of part
+1708920	1712280	of the overall project grade assigned by the instructors.
+1712280	1716440	But you'll also ask all the students in the class
+1716440	1718720	to send comments on the presentations.
+1718720	1721880	And so you may find that you get helpful suggestions
+1721880	1724360	about interpreting your data from other people and so forth.
+1724360	1729040	So that'll be a required component of the course
+1729040	1733280	for all students to attend the presentations and comment on them.
+1733280	1737000	And we hope that will be a lot of fun.
+1737000	1739240	OK, so is this the right course for me?
+1739240	1741960	So I just wanted to sort of let you know.
+1741960	1744920	I might you're fortunate to have a rich selection
+1744920	1748400	of courses in computational systems, synthetic biology,
+1748400	1749080	here at MIT.
+1749080	1752880	I've listed many of them, probably not all.
+1752880	1759840	But the ones that I'm aware of that are available on campus,
+1759840	1762760	757 is really only for biology grad students.
+1762760	1766040	But the other courses listed here are generally open.
+1766040	1768400	Some are more geared for graduate students.
+1768400	1770000	Some are more undergrads.
+1770000	1771280	Some are more specialized.
+1771280	1774680	So for example, Jeff Gore's systems biology course
+1774680	1777040	is more focused on systems biology,
+1777040	1782760	whereas our course covers both computational and systems.
+1782760	1783680	Keep that in mind.
+1783680	1785520	Make sure you're in the right place,
+1785520	1788880	that this is what you want.
+1788880	1791360	OK, a few notes on the textbook.
+1791360	1794040	So there is a textbook.
+1794040	1796440	It's not required.
+1796440	1798080	It's called understanding bioinformatics
+1798080	1800040	by Svellebo and Bong.
+1800040	1803280	It's quite good on certain topics.
+1803280	1807600	But it really only covers about maybe a third of what
+1807600	1809440	we cover in the course.
+1809440	1813960	So there is good content on local alignment, global alignment,
+1813960	1817080	scoring matrices, the topics of the next couple lectures.
+1817080	1820280	And I'll sort of point you to those chapters.
+1820280	1823160	But it's very important to emphasize
+1823160	1826800	that the content of the course is really
+1826800	1830480	what happens in lecture and on the homeworks.
+1830480	1834360	And to some extent, what happens in recitation.
+1834360	1839320	And the textbook is just there as a backup, if you will.
+1839320	1841440	Or for those who would like to get
+1841440	1844360	more background on the topic or want
+1844360	1850640	to read a different description of that topic.
+1850640	1856400	So you decide whether you want to purchase the textbook or not.
+1856400	1860680	It's available at the coop or through Amazon shop around.
+1860680	1862040	You can find it.
+1862040	1866600	It's paperback, pretty good general reference
+1866600	1868400	on a variety of topics.
+1868400	1872040	But it doesn't really have much on systems biology.
+1872040	1874200	All right, another important reference
+1874200	1875880	that was developed specifically for this course
+1875880	1879840	a few years ago is the probability and statistics
+1879840	1880600	primer.
+1880600	1885680	So you'll notice that some of the homeworks, particularly
+1885680	1887440	in the earlier parts of the course,
+1887440	1890640	will have significant probability and statistics.
+1890640	1894560	And we sort of assume that you have some background
+1894560	1895800	in this area.
+1895800	1897120	Many of you do.
+1897120	1900720	If you don't, you'll need to pick that up.
+1900720	1904720	And this primer was written to provide those topics
+1904720	1910760	in probability, especially that are foundational and most
+1910760	1912920	relevant to computational biology.
+1912920	1917560	So for example, there are some common concepts,
+1917560	1922240	like p-value, probability density function,
+1922240	1925760	probability mass function, cumulative distribution
+1925760	1928480	function, and then common distributions,
+1928480	1933040	exponential distribution, Poisson distribution,
+1933040	1935360	extreme value distribution.
+1935360	1939440	So maybe, hope, if those are mostly sounding familiar to you,
+1939440	1940840	that's good.
+1940840	1945800	If they're familiar, but you really don't,
+1945800	1947960	you get binomial and Poisson confused or something,
+1947960	1953160	then definitely you want to consult this primer.
+1953160	1959920	So I think looking at the lectures and the homeworks,
+1959920	1964480	it should probably be pretty clear which aspects are
+1964480	1965560	going to be relevant.
+1965560	1968440	And I'll try to point those out when possible.
+1968440	1971520	And you can also consult your TAs
+1971520	1974640	if you're having trouble with the probability and statistics
+1974640	1975160	the content.
+1975160	1977320	So we are going to focus here on really
+1977320	1980400	the computational biology, bioinformatics content,
+1980400	1985080	and not, we might briefly review a concept from probability,
+1985080	1986640	like maybe conditional probability when
+1986640	1987640	we talk about Markov chains.
+1987640	1989640	But we're not going to spend a lot of time.
+1989640	1990600	So if that's the first time you've
+1990600	1993240	seen conditional probability, you might be a little bit lost.
+1993240	1996920	So you'd be better off reading about it in advance.
+1998800	2000280	OK?
+2000280	2002360	Questions?
+2002360	2003320	No questions.
+2003320	2008520	If it's a video, it's intimidating people.
+2008520	2011160	All right.
+2011160	2013960	The TAs know a lot about probability and statistics.
+2013960	2016320	We'll be able to help you.
+2016320	2017520	OK, so homework.
+2017520	2018440	So I apologize.
+2018440	2020280	The font is a little bit small here,
+2020280	2022080	so I'll try to state it clearly.
+2022080	2026120	So there are going to be five problem
+2026120	2031640	sense that are roughly one per topic,
+2031640	2035320	except you'll see Pset2 covers topics two or three,
+2035320	2037960	so it might be a little bit longer.
+2037960	2047440	They will have the way we handle students who have to travel.
+2047440	2048840	So many of you might be seniors.
+2048840	2050680	You might be interviewing for graduate schools,
+2050680	2053960	or you might have other conflicts with the course.
+2053960	2056520	So rather than doing that on a case-by-case basis,
+2056520	2060080	which we found it gets very complicated
+2060080	2063040	and is not necessarily fair, the way we've set it up
+2063040	2064520	is that the total number of points
+2064520	2068640	available on the five homeworks is 120, OK?
+2068640	2073920	But the maximum score that you can get is 100, OK?
+2073920	2080960	So if you, for example, were to get 90% on all five
+2080960	2085080	of the homeworks, that would be 90% of 120,
+2085080	2086360	which would be 108 points.
+2086360	2088840	You would get the full 100, you know,
+2088840	2090720	you get 100% on your homework.
+2090720	2093560	That would be a perfect score on the homework, OK?
+2093560	2096120	But because of that, because there's more points available
+2096120	2099280	than sort of you need, we don't allow you
+2099280	2104440	to drop homeworks, OK, or to do like an alternate assignment
+2104440	2106560	or something like that.
+2106560	2108880	So the way it works is you can basically miss,
+2108880	2113560	as long as you do well on, say, four of the homeworks,
+2113560	2116560	you could actually miss one without much of a penalty.
+2116560	2122080	For example, if each of the homeworks were worth 24 points
+2122080	2124760	and you got perfect score on four of them,
+2124760	2126800	that would be 96 points.
+2126800	2129280	You would have like an almost perfect score on your homework
+2129280	2131360	and you could miss that fifth homework.
+2131360	2135400	Now, of course, we don't encourage you to skip that homework.
+2135400	2138600	We think the homeworks are useful and are a good way
+2138600	2141680	to solidify the information you've
+2141680	2143560	gotten from lecture and reading and so forth.
+2143560	2145800	So, you know, it's good to do them.
+2145800	2148120	And doing the homeworks will help you
+2148120	2150160	and perhaps prepare you for exams.
+2150160	2153600	But that's sort of the way we handle the homework policy.
+2153600	2155760	And I should also mention that not all the homeworks
+2155760	2157840	will be the same number of points, OK?
+2157840	2159960	Will, you know, a portion of the points
+2159960	2162760	and the portion of the difficulty
+2162760	2164360	and length of the homework assignment.
+2164360	2165920	So, for example, the first homework assignment
+2165920	2167800	is a little bit easier than the others.
+2167800	2171120	So, it's going to have somewhat fewer points, OK?
+2171120	2171920	So, late assignments.
+2171920	2176400	So, all the homeworks will do it noon on the indicated day.
+2176400	2179200	And if it's within 24 hours after that,
+2179200	2181840	then you'll be eligible for a 50% credit.
+2181840	2187320	And beyond that, you don't get any points, in part
+2187320	2192240	because the TAs will be posting the answers to the homeworks, OK?
+2192240	2194400	And we want to be able to post them, you know, promptly
+2194400	2196760	so that, you know, you get the answers
+2196760	2199880	while those problems are fresh in your mind.
+2199880	2200720	Questions about homeworks?
+2204080	2205560	OK, good.
+2205560	2206720	So, collaboration on problem sets.
+2206720	2212280	So, you know, we want you to do the problem sets.
+2212280	2213280	You can do them independently.
+2213280	2217440	You can work with a friend on them, or even in a group.
+2217440	2218800	Discuss them together.
+2218800	2221200	But write up your solutions independently.
+2221200	2222680	You don't learn anything by, you know,
+2222680	2225160	by copying someone else's solution.
+2225160	2232400	And if the TAs see duplicate or near identical solutions,
+2232400	2235560	both of those homeworks will get a zero, OK?
+2235560	2237360	And this occasionally happens to be,
+2237360	2239120	we don't want this to happen to you.
+2239120	2241760	So, just avoid that, OK?
+2241760	2246800	So, discuss together, but write up your solutions separately.
+2246800	2249920	Similarly, with programming, if you have a friend
+2249920	2252480	who's a more experienced programmer than you are,
+2252480	2254560	you know, by all means, you know,
+2254560	2256960	ask them for advice, general things.
+2256960	2259240	How should I structure my program?
+2259240	2263000	Do you know a function that, you know, generates a loop
+2263000	2265160	or whatever it is that you need?
+2265160	2270640	But, you know, don't share code with anyone else, OK?
+2270640	2272280	That would be a no-no.
+2272280	2275200	So, write up your code independently, OK?
+2275200	2277760	And again, the graders will be looking
+2277760	2282280	for identical code, and that will be thrown out, OK?
+2282280	2285240	And so, we don't want to have any misconduct
+2285240	2287880	of that type occurring.
+2287880	2289640	All right, so, recitations.
+2289640	2292480	There are three recitations sections offered each week.
+2292480	2295720	Wednesday at 4, by Peter, Thursday at 4, by Colette,
+2295720	2301040	Friday at 4, by Tahin, and that is a special recitation
+2301040	2306480	that's required for the 6, 8, 7, 4 students, David, yes,
+2306480	2309080	and has additional AI content.
+2309080	2311280	So, anyone is welcome to go to that recitation,
+2311280	2315040	but those who are taking 6, 8, 7, 4 must go.
+2315040	2317640	The other, for students registered
+2317640	2319160	for the other versions of the course,
+2319160	2321040	going to recitation is optional,
+2321040	2324160	but strongly recommended, because the TAs will go
+2324160	2328240	over material from the lectures, material that's helpful
+2328240	2330360	for the homework, so we're studying for the exams,
+2330360	2335000	in the first week's Python probability as well.
+2335000	2338800	So, you know, go to the recitations,
+2338800	2341880	particularly if you're having trouble in the course.
+2341880	2344760	So, Tahin's recitation starts this week,
+2344760	2347480	and Peter and Colette's will start.
+2347480	2348320	We'll start next week.
+2348320	2349160	Question, yes?
+2349160	2352200	What is covering the same material?
+2352200	2354840	Peter and Colette will cover similar material,
+2354840	2357200	and Tahin will cover different material.
+2364600	2365600	Python instruction.
+2365680	2370120	So, the first problem set, which will be posted this evening,
+2370120	2372920	is it doesn't have any programming on it,
+2372920	2375440	but if you don't have programming,
+2375440	2378200	you need to start learning it very soon, okay?
+2378200	2382640	And so, there will be a significant programming problem
+2382640	2386240	on Pset2, and we'll be posting that problem soon,
+2386240	2389400	this week, sometime, and you want to look at that
+2389400	2393160	and gauge, like, how much Python do I need to learn
+2393640	2395720	to at least do that problem.
+2395720	2397240	So, what is this project component
+2397240	2399920	that we've been hearing about?
+2399920	2402520	So, here's a more concrete description.
+2402520	2404800	So, again, this is only for the graduate versions
+2404800	2405800	of the course.
+2405800	2410400	So, students will, it basically sort of structured it,
+2410400	2412280	so there's, you know, you kind of work
+2412280	2416280	incrementally toward the final research project,
+2416280	2418680	and so that we can offer feedback and help
+2418680	2420600	along the way if needed.
+2420600	2424680	So, the first assignment will be next week,
+2424680	2428640	I think it's on Tuesday, where we'll have more instructions
+2428640	2432160	on Thursday's lecture, but all the students registered
+2432160	2434200	for the grad version will submit their background
+2434200	2436480	and interest for posting on the course website,
+2436480	2438040	and then you can sort of look at those
+2438040	2441560	and try to find other students who have ideally similar
+2441560	2444680	interests, but perhaps somewhat different backgrounds.
+2444680	2448840	It's particularly helpful to have a strong biologist
+2448840	2450920	on the team, and perhaps a strong programmer
+2450920	2451960	would help as well.
+2453320	2457720	So, then you will choose your teams
+2457720	2461640	and submit a project title and one paragraph summary
+2461640	2464680	that will, you know, the basic idea of your project.
+2464680	2468760	Now, we are not providing a menu of research projects,
+2468760	2472320	it's your choice, whatever you wanna do,
+2472320	2474320	as long as it's related to computational
+2474320	2477600	and systems biology, so it could be analysis
+2477600	2481680	of some publicly available data, could be analysis
+2481680	2484680	of some data that you got during your rotation,
+2484680	2486720	or for those of you who are already in labs
+2486720	2489920	that you're actually working on, it's totally fine
+2489920	2492160	and encouraged that the project be something
+2492160	2496920	that's related to your main PhD work
+2496920	2501920	if you've started on that, and it could also be more
+2502160	2505160	sort of in the modeling, some modeling with MATLAB
+2505160	2507760	or something, if you're familiar with that.
+2507760	2510680	But variety of possibilities will have more information
+2510680	2513920	on this later, but we want you to form teams.
+2513920	2518760	The teams can work independently, or with up to four friends
+2518760	2522840	in teams of five, and if people wanna have a giant team
+2522840	2524360	to do some really challenging project,
+2524360	2527120	then you can come and discuss with us,
+2527120	2529920	and we'll see if that would work.
+2530920	2534800	So then there's the initial title
+2534800	2537360	in one paragraph summary, we'll give you a little feedback
+2537360	2540480	on that, and then you'll submit an actual
+2540480	2544240	specific aims document, so with actual NIH-style
+2544240	2547520	specific aims, the goal is to understand
+2547520	2550200	whether this organism has operons or not,
+2550200	2554200	or whatever, some actual scientific question,
+2554200	2558120	and a bit about how you will undertake that,
+2558160	2563160	and then you'll submit a longer two-page research strategy,
+2564040	2567120	which will include specifically, we will use these data,
+2567120	2570160	where we use this software, these statistical approaches,
+2570160	2573520	that sort of thing, and then toward the end
+2573520	2575720	of the semester, a final written report will be due
+2575720	2579400	to that'll be five pages, you'll work on it together,
+2579400	2581800	but it'll need to be clear who did what,
+2581800	2584120	you'll need an author contribution statement,
+2584120	2586640	so and so did this analysis, so and so wrote this section
+2586680	2590200	and that sort of thing, and then as I mentioned before,
+2590200	2592960	there will be oral presentations by each team
+2592960	2596680	on the last two course sessions, okay?
+2598640	2600440	Questions about docs?
+2600440	2603800	There's more information on the course info document online.
+2606960	2607800	Okay, good.
+2609880	2614880	Yes, so for those taking six, eight, seven, four,
+2615080	2618440	in addition to the project, there will also be additional
+2618440	2623160	AI problems on both the P-sets and exam, David?
+2623160	2624000	Yes, okay.
+2627120	2630320	And they're optional for others, okay.
+2630320	2632200	All right, good.
+2632200	2635520	Okay, so how are we gonna do the exam?
+2635520	2638440	So there's, as I mentioned, there's two 80-minute exams,
+2638440	2640560	they're non-cumulative, so the first exam covers basically
+2640560	2644480	the first three topics, second exam on the last three topics,
+2644480	2647600	there are 80 minutes there during normal class time,
+2648920	2652600	there's no final exam, the grading,
+2652600	2655440	so for those taking the undergrad version,
+2655440	2659320	the homeworks will count 36% out of the maximum 100 points
+2660400	2664000	and the exams will count 62%,
+2664000	2666680	and then this peer review where there's two days
+2666680	2668520	where you go and you listen to presentations
+2668520	2672320	and you submit comments online counts, counts 2%, okay?
+2672320	2676000	For the graduate bioBEHST versions,
+2676000	2681000	it's 30% homeworks, 48% exams, 20% project,
+2681500	2686500	2% peer review, for the EECS version, six, eight, seven, four,
+2686760	2690200	25% homework, 48% exams, 20% project,
+2690200	2693620	and then 5% for these extra AI-related problems,
+2694520	2697320	and 2% peer review, and those should add up to 100,
+2697320	2702080	and then in addition, we will award 1% extra credit
+2702080	2705360	for outstanding class participation.
+2705360	2709100	So questions, comments, during class.
+2712560	2715720	All right, so a few announcements about topic one,
+2715720	2719880	and then each of us will sort of review the topics
+2719880	2721200	that are coming up.
+2721200	2723040	So PSET one will be posted tonight,
+2723040	2725440	it's due February 20th at noon,
+2725440	2728520	it involves basic microbiology, probability, and statistics,
+2728520	2729880	could be some experience with BLAST
+2729880	2731800	and some of the statistics associated.
+2731800	2735320	PSET two will be posted later this week,
+2735320	2738640	so you don't need to obviously start on PSET two yet,
+2738640	2740280	it's not due for several weeks,
+2740280	2742720	but definitely look at the programming problem
+2742720	2745120	to give you an idea of what's involved
+2745120	2748660	and what to focus on when you're reviewing your Python.
+2749800	2752160	Mention the probability stats primer,
+2752160	2755120	sequencing technology, so for Thursday's lecture,
+2755120	2759320	it'll be very helpful if you read the review by Metzger
+2759320	2761560	on next-gen sequencing technologies.
+2761720	2765200	It's pretty well written, covers Illumina 454,
+2765200	2767920	PacBio, and a few other interesting
+2767920	2769040	sequence technologies.
+2771000	2773240	Other background readings, so we'll be talking about
+2773240	2776280	local alignment, global alignment, statistics,
+2776280	2779320	and similarity matrices for the next two lectures,
+2779320	2781360	and chapters four and five of the textbook
+2781360	2783760	provide a pretty good background on these topics,
+2783760	2786140	I encourage you to take a look.
+2787720	2790400	Okay, so I'm just gonna briefly review my lectures,
+2790400	2793280	and then we'll have David and Ernest do the same,
+2793280	2797400	so sequencing technologies will be beginning of lecture two,
+2797400	2802400	and then we'll talk about local un-gapped sequence alignment,
+2803920	2807520	particular blast, so blast is something like
+2807520	2811200	the Google search engine of bioinformatics, if you will,
+2811200	2813920	it's one of the most widely used tools,
+2813920	2816360	and it's important to understand something about
+2816360	2818440	how it works, and in particular how to evaluate
+2818440	2820600	the significance of blast hits,
+2820600	2824200	which are described by this extreme value distribution.
+2826880	2829200	All right, and then lecture three,
+2829200	2831880	we'll talk about global alignment,
+2831880	2835000	and introducing gaps into sequence alignments.
+2835000	2839280	We'll talk about some dynamic programming algorithms,
+2839280	2843280	Needleman-Wench, Smith-Waterman, and in lecture four,
+2843280	2846120	we'll talk about comparative genomic analysis
+2846120	2847800	of gene regulation.
+2847800	2851760	So using sequence similarity across genomes
+2851760	2854800	to infer location of regulatory elements,
+2854800	2858500	such as microRNA target sites, other things like that.
+2859560	2861760	All right, so I think this is now,
+2861760	2864000	oh, sorry, a few more lectures.
+2864000	2867520	Then in the next unit, modeling biological function,
+2868600	2871080	I'll talk about the problem of motif finding,
+2871080	2876080	so searching a set of sequences for a common subsequence
+2876640	2880840	or similar subsequences that possess
+2880840	2884160	a particular biological function, like binding to a protein.
+2884160	2885560	It's often a complex search space.
+2885560	2887360	We'll talk about the Gibbs sampling algorithm
+2887360	2888760	and some alternatives.
+2888760	2892040	And then in lecture 10, we'll talk about Markov
+2892040	2894880	and Hidden Markov models, which have been called
+2894880	2899640	the Legos of Bioinformatics, which can be used
+2899640	2904640	to model a variety of sort of linear sequence labeling problems.
+2905280	2910280	And then on the last lecture of that unit,
+2910520	2912560	I'll talk a little bit about protein,
+2912560	2914600	I'm sorry, about RNA secondary structure,
+2914600	2919400	so the base pairing of RNAs,
+2919400	2922200	predicting it from thermodynamic tools,
+2922200	2926640	as well as comparative genomic approaches.
+2926640	2930200	And you'll learn about the Enfold tool
+2930200	2932360	and how you can use a diagram like that
+2932360	2936360	to infer that this RNA may have different possible structures
+2936360	2939600	that I can fold into, like those shown here.
+2939600	2942680	All right, so I'm gonna pass it off to David.
+2951320	2952440	Thanks very much, Chris.
+2954840	2958200	Right, so I'm David Gifford, and I'm delighted to be here.
+2958200	2960560	It's really a wonderfully exciting time
+2960560	2962920	in computational biology.
+2962920	2964600	And one of the reasons it's so exciting
+2964600	2968400	is shown on this slide, which is the production
+2968400	2971480	of DNA-based sequence per instrument over time.
+2971480	2974200	And as you can see, it's just amazingly
+2975560	2977680	more efficient as time goes forward.
+2977680	2980560	And if you think about the reciprocal of this curve,
+2980560	2984080	the cost per base is basically becoming extraordinarily low.
+2984960	2988800	And this kind of instrument allows us to produce
+2988800	2991480	hundreds of millions of sequence reads
+2991480	2993720	for a single experiment.
+2993720	2995960	And thus, do we not only need new computational methods
+2995960	2999040	to handle this kind of a big data problem,
+2999040	3000440	but we need computational methods
+3000440	3003680	to represent the results in computational models.
+3003680	3006760	And so we have multiple challenges computationally
+3006760	3009640	because modern biology really can't be done
+3009640	3011680	outside of a computational framework.
+3012960	3016640	And to summarize the way people have adapted
+3016680	3018960	these high throughput DNA sequencing instruments,
+3018960	3021040	I built this small figure for you.
+3021040	3023280	And you can see that Professor Burge
+3023280	3026480	would talk about DNA sequencing next time.
+3026480	3028280	And obviously, you can use DNA sequencing
+3028280	3030160	to sequence your own genomes,
+3030160	3033840	or the genomes of your favorite pet or whatever you like.
+3033840	3035960	And so we'll talk about in lecture six
+3035960	3038320	how to actually do genome sequencing.
+3038320	3041600	And one of the challenges in doing genome sequencing
+3041600	3044400	is how to actually find what you have sequenced.
+3044400	3047600	And we'll be talking about how map sequence reads as well.
+3048600	3050160	Another way to use DNA sequencing
+3050160	3053160	is to take the RNA species present in a single cell
+3053160	3054880	or in a population of cells
+3054880	3058680	and convert them into DNA using reverse transcript days.
+3058680	3060640	Then we can sequence the DNA
+3060640	3062640	and understand the RNA complement of the cell,
+3062640	3065280	which of course, either can be used as messenger RNA
+3065280	3068840	to code for protein or for structural RNAs
+3068840	3070720	or for non-coding RNAs that have other kinds
+3070720	3072720	of functions associated with chromatin.
+3074800	3078200	In lecture seven, we'll be talking about protein DNA interactions
+3078200	3079920	with Professor Burge already mentioned.
+3079920	3083560	The idea that we can actually locate all the regulatory factors
+3083560	3084640	associated with the genome
+3084640	3086640	using a single high throughput experiment.
+3087920	3090000	We do this by isolating the proteins
+3090000	3092080	and their associated DNA fragments
+3092080	3093440	and sequencing the DNA fragments
+3093440	3095720	using this DNA sequencing technology.
+3097000	3102000	So briefly, the first thing that we'll look at in lecture five
+3102920	3104640	is given a reference genome sequence
+3104640	3107240	and a basket of DNA sequence reads,
+3107240	3109600	how do we build an efficient index
+3109600	3112440	so that we can either map or align those reads
+3112440	3114400	back to the reference genome?
+3114400	3116880	That's a very important and fundamental problem
+3116880	3119480	because if I give you a basket of 200 million reads,
+3119480	3123160	we need to build this alignment very, very rapidly
+3123160	3124960	and quickly and accurately,
+3124960	3128360	especially in the context of repetitive elements
+3128360	3131280	because a genome obviously has many repeats in it
+3131280	3132960	and we need to consider how our indexing
+3132960	3134480	and searching algorithms are going to handle
+3134480	3136520	those sorts of elements.
+3136520	3138720	In the next lecture, we'll talk about
+3138720	3142160	how to actually sequence a genome and assemble it.
+3142160	3144440	So the fundamental way that we approach genome sequencing
+3144440	3146360	given today's sequencing instruments
+3146360	3149320	is that we take intact chromosomes at the top,
+3149320	3151760	which of course are hundreds of millions of bases along
+3151760	3153960	and we shatter them into pieces.
+3153960	3157320	And then we sequence size selected pieces
+3157320	3159320	in a sequencing instrument
+3159360	3161680	and then we need to put the jigsaw puzzle back together
+3161680	3163840	with a computational assembler.
+3163840	3166520	So we're talking about assembly algorithms,
+3166520	3169000	how they work and furthermore,
+3169000	3172120	how to resolve ambiguities as we put that puzzle together,
+3172120	3175120	which often arise in the context of repetitive sequence.
+3176280	3178480	And in the next lecture seven,
+3178480	3180960	we'll be looking at how to actually take
+3180960	3184480	those little DNA molecules that are associated with proteins
+3184480	3187000	and analyze them to figure out
+3187040	3189840	where particular proteins are bound to the genome
+3189840	3191480	and how they might regulate target genes.
+3191480	3194000	Here we see two different occurrences
+3194000	3196000	of octave or binding events
+3196000	3197960	binding approximately to the SOCs to gene,
+3197960	3199120	which they are regulating.
+3201280	3205840	So that's the beginning of our analysis
+3205840	3210840	of DNA sequencing and then we'll look at RNA sequencing.
+3212560	3214640	Once again, we're going through our DNA intermediate
+3214640	3218040	and ask the question, how can we look at
+3218040	3219840	the expression of particular genes
+3219840	3223680	by mapping RNA sequence reads back onto the genome?
+3223680	3226880	And there are two fundamental questions we can address here,
+3226880	3231880	which is what is the level of expression of a given gene
+3231880	3235880	and secondarily, what isoforms are being expressed?
+3235880	3238240	The second sets of reads you see up on the screen
+3238240	3241960	are split reads that cross splice junctions.
+3241960	3245760	And so by looking at how reads aligning to the genome,
+3245760	3249180	we can figure out which particular exons are included
+3249180	3252000	or excluded from a particular transcript.
+3253760	3257400	So that's the beginning of sort of the high throughput biology,
+3257400	3261840	genomic analysis module, and I'll be returning to SOC
+3261840	3265320	later in the term about computational genetics,
+3265320	3267400	which really is a way to summarize everything
+3267400	3271000	we're learning in the course into an applicable way
+3271040	3274080	to ask fundamental questions about genome function,
+3274080	3276320	which Professor Burge talked about earlier.
+3278000	3282320	Now, we all have about three billion bases
+3282320	3285000	out in our genomes and as you know,
+3285000	3287680	you differ from the individual sitting next to you
+3287680	3291680	about in one and every thousand base pairs on average.
+3291680	3294800	And so one question is how do we actually interpret
+3294800	3297920	these differences between genomes
+3297920	3300880	and how can we build accurate computational models
+3300880	3304560	that allow us to infer function from genome sequence?
+3305400	3307160	And that's a pretty big challenge.
+3308040	3313040	So we'll start by asking questions about
+3313080	3314720	what parts of the genome are active
+3314720	3316320	and how can we annotate them?
+3317440	3319720	So we can use once again different kinds
+3319720	3322280	of sequencing based assays
+3322280	3324240	to identify the regions of the genome
+3324240	3327240	that are active in any given cellular state.
+3327240	3329720	And furthermore, if we look at different cells,
+3329720	3331400	we can tell which parts of the genome
+3331400	3333240	are differentially active.
+3333240	3335640	Here you can see the active chromatin
+3335640	3338240	during the differentiation of an ESL
+3338240	3341520	into a terminal type over a 50 kilobase window
+3341520	3344080	and the regions of the genome that are sheeted in yellow
+3344080	3348000	represent regions that are differentially active.
+3348000	3352160	And so using this kind of DNA-seq data and other data,
+3352160	3354840	we can automatically annotate the genome
+3354840	3356840	with where the regulatory elements are
+3356880	3359920	and begin to understand what the regulatory code
+3359920	3360920	of the genome is.
+3362560	3365600	So once we understand what parts of the genome are active,
+3365600	3367960	we can ask questions about how do they contribute
+3367960	3369560	to some overall phenotype.
+3370720	3374280	And our next lecture, our lecture 19,
+3374280	3377440	we'll be looking at how we can build a model
+3377440	3380920	of a quantitative trait based upon multiple loci
+3380920	3383880	and the particular alleles that are present at that loci.
+3383880	3387040	So here you see an example of a bunch
+3387040	3389080	of different quantitative trait loci
+3389080	3390800	that are contributing to the growth rate
+3390800	3392360	of yeast in a given condition.
+3393400	3397760	So part of our exploration during this term
+3397760	3400080	will be to develop computational methods
+3400080	3403040	to automatically identify regions of the genome
+3403040	3406480	that control such traits and to decide the significance.
+3407760	3410680	And finally, we'd like to put all this together
+3410680	3412800	and ask a very fundamental question,
+3412800	3415520	which is that how do we assign variations
+3415520	3420520	in the human genome to differential risk for human disease?
+3420520	3422200	And associated questions are,
+3422200	3424360	how can we assign those variants
+3424360	3426960	to what best therapy would be applied to the disease,
+3426960	3430360	what therapeutics might be used, for example.
+3430360	3433920	And here we have a bunch of results
+3433920	3436240	from genome-wide association studies,
+3436240	3439160	started with bipolar disorder at the bottom
+3439160	3441440	as type two diabetes.
+3441440	3443480	And looking along the chromosomes,
+3443480	3447080	we're asking which locations along the genome
+3447080	3449320	have variants that are highly associated
+3449320	3451440	with these particular diseases
+3451440	3453040	in these so-called Manhattan plots
+3453040	3456040	because the things that stick up look like buildings.
+3456040	3459320	And so these sorts of studies are yielding,
+3459320	3463000	very interesting insights into variants
+3463000	3465800	that are associated with human disease.
+3465800	3466800	And the next step, of course,
+3466800	3469320	is to figure out how to actually prove
+3469320	3471680	that these variants are causal
+3471680	3473920	and also to look at mechanisms
+3473920	3475560	where we might be able to address
+3475560	3478200	what kinds of therapeutics might be applied
+3478200	3480360	to deal with these diseases.
+3480360	3481920	So those are my two units.
+3481920	3485080	Once again, high throughput genomic analysis
+3485080	3487880	and secondarily computational genetics.
+3487880	3491160	And finally, if you have any questions about 6874,
+3491160	3492160	I'll be here after lecture.
+3492160	3493880	Feel free to ask me.
+3493880	3494720	Alright.
+3499320	3506320	Thank you very much, Dave.
+3506320	3508640	Alright, so in the preceding lectures,
+3508640	3510520	you'll have heard a lot about the amazing things
+3510520	3513120	we can learn from nucleic acid sequencing.
+3513120	3515280	And what we're going to do in the latter part of the course
+3515280	3517240	is look at other modalities in cell.
+3517240	3519960	Obviously, there's a lot that goes on inside of cells
+3519960	3523120	that's not taking place in level of DNA RNA.
+3523120	3525160	So we're going to start to look at proteins,
+3525160	3527360	protein interactions, and ultimately,
+3527360	3529640	protein interaction networks.
+3529640	3531840	So we'll start with the smallest scale,
+3531840	3534160	looking at intermolecular interactions
+3534160	3536720	of the biophysics, the fundamental biophysics
+3536720	3537880	protein structure.
+3537880	3540240	Then we'll start to look at protein-protein interactions
+3540240	3543520	and I said the final level of the networks.
+3543520	3545840	There's been an amazing advance in our ability
+3545840	3547680	to predict protein structure.
+3547680	3550400	So it's always been the dream of computational biology
+3550400	3552880	to be able to go from the sequence of a gene
+3552880	3555560	to the structure of the corresponding protein.
+3555560	3557560	And ever since Antonson, we know that at least that
+3557560	3560040	should be theoretically possible for a lot of proteins.
+3560040	3561520	But it's been computationally virtually
+3561520	3563480	intractable until quite recently.
+3563480	3564840	And a number of different approaches
+3564840	3567000	have allowed us to predict protein structure.
+3567000	3568680	So this slide shows, for example,
+3568680	3570680	I don't know which one's which, but in blue,
+3570680	3573360	perhaps, prediction in red, the true structure
+3573360	3575320	they were around, but you can see it doesn't matter very much.
+3575320	3578280	We're getting extremely accurate predictions
+3578280	3580640	of small protein structure.
+3580640	3582200	There are a variety of approaches here
+3582200	3583760	that live on a spectrum.
+3583760	3587240	On the one hand, there's the computational approach
+3587240	3589880	that tries to make special purpose hardware
+3589880	3592840	to carry out the calculations for protein structure.
+3592840	3594280	And that's been wildly successful.
+3594280	3596360	And the other end of the extreme, there's
+3596360	3598440	been the crowdsourcing approach to have gamers
+3598440	3599960	try to predict protein structure.
+3599960	3601680	And that turns out to be successful.
+3601680	3604280	And there's a lot of interesting computational approaches
+3604280	3605160	in the middle as well.
+3605160	3609040	So we'll explore some of these different strategies.
+3609040	3611800	Then the ability to go from just saying a single protein
+3611800	3613960	structure to how these protein interacts.
+3613960	3617000	So now there are pretty good algorithms predicting protein
+3617000	3618800	protein interactions as well.
+3618800	3620040	And that allows us then to figure out
+3620040	3622200	not how these proteins function individually,
+3622200	3625480	but how they begin to function as a network.
+3625480	3627200	Now, one of the things that we've already
+3627200	3628960	going to be touched on early parts of the course
+3628960	3632880	are protein DNA interactions through sequencing approaches.
+3632880	3634880	We want to now look at them at a regulatory level.
+3634880	3638920	And could you reconstruct the regulation of a genome
+3638920	3641040	by predicting the protein DNA interactions?
+3641040	3642920	And there's been a lot of work here.
+3642920	3645840	We talked earlier about Eric Davidson's pioneering
+3645840	3648600	approaches, a lot of interesting computational approaches
+3648600	3651660	as well, that go from the relatively simple models
+3651660	3654280	who saw on those earlier slides to these very complicated
+3654280	3655800	networks that you see here.
+3655800	3658680	We'll look at what these networks actually tell us,
+3658680	3661720	how much information is really encoded in them.
+3661720	3664280	They are certainly pretty, whatever they are.
+3664280	3666760	We'll look at other kinds of interaction networks.
+3666760	3669880	We'll look at genetic interaction networks as well.
+3669880	3671400	And perhaps some other kinds.
+3671400	3673440	And finally, we'll look at computable models.
+3673440	3674480	And what do we mean by that?
+3674480	3677920	We mean models that make some kind of very specific prediction,
+3677920	3679800	whether it's a Boolean prediction.
+3679800	3681920	This gene will be on or off, or perhaps an even more
+3681920	3683360	quantitative prediction.
+3683360	3686080	So we'll look at logic-based modeling and probably
+3686080	3688480	Bayesian networks as well.
+3688480	3692200	So that's been a very whirlwind tour of the course.
+3692200	3693760	Just to go back to mechanics, make
+3693760	3696080	sure you're signed up for the right course.
+3696080	3697960	The undergraduate versions of the course
+3697960	3700080	do not have a project.
+3700080	3702800	And they certainly do not have the artificial intelligence
+3702800	3703760	problems.
+3703760	3705120	Then there are the graduate versions
+3705120	3707040	that have the project, but not have the I.
+3707040	3709480	And finally, the 687-4, which has both.
+3709480	3712640	So please be sure you're in the right class
+3712640	3716440	so you get credit for the right assignments.
+3716440	3719280	And finally, if you've got any questions about the course
+3719280	3720480	mechanics, we have a few minutes.
+3720480	3722680	We can talk about it here and from everybody.
+3722680	3725000	And then we'll all be available after class,
+3725000	3726800	a little bit to answer questions.
+3726800	3729160	So please, any questions?
+3729160	3729600	Yes?
+3729600	3731000	Can undergrad students ever?
+3731000	3732280	Can't undergrad students ever?
+3732280	3735800	Well, they can sign up for the graduate version, absolutely.
+3735800	3736880	Other questions?
+3736880	3737400	Yes?
+3737400	3742560	Yeah, I actually can't make other of those sessions.
+3742560	3745000	I'll send an email to the staff list, and we'll see what
+3745000	3745600	we can do.
+3749080	3749840	Other questions?
+3753200	3754200	Yes?
+3754200	3758480	687 doesn't exist in a constitutional evolutionary
+3758480	3759800	biology class.
+3759800	3761920	Oh, the thing we list as alternative classes?
+3761920	3762400	Sorry.
+3762400	3763600	We'll pick that.
+3763600	3764600	Very simple.
+3764600	3766200	I think it's still happening.
+3766200	3768000	Yeah, I mean it.
+3768000	3770280	We'll delete it from our slides, yes.
+3774840	3778440	We are powerful, but not that powerful.
+3778440	3779680	Other questions?
+3779680	3780680	Comments?
+3780680	3781800	Critiques?
+3781800	3783000	Yes, in the back?
+3783000	3786720	Are each of the exams equally weighted?
+3786720	3789960	Yes, they are.
+3789960	3790480	Yes?
+3790480	3794360	We're in 687 and before we have the additional AI problems.
+3794360	3797200	Does that mean that we have more questions on the exam
+3797200	3801200	but just as much time through them?
+3801200	3802880	The question was, if you're in 687,
+3802880	3805280	for any of the additional AI questions on the exam,
+3805280	3807200	does that mean you have more questions
+3807200	3808480	but the same amount of time?
+3808480	3811880	And I believe the answer to that is yes.
+3812760	3814600	We may revisit that question.
+3814600	3816760	We will revisit that question a little later today.
+3820760	3823200	But of course, six students are just so much smarter
+3823200	3825800	than everyone else, right?
+3825800	3826320	Yes?
+3826320	3828840	Can you say the different versions of class by the ad?
+3828840	3830080	I'm sorry, can you say that again?
+3830080	3832800	Can you say the different versions of class by the ad?
+3832800	3834760	Can you switch between different versions of class
+3834760	3836760	by the ad drop deadline?
+3836760	3838360	In principle, yes.
+3838360	3840760	But if you haven't done the work for that,
+3840760	3843080	then you will be in trouble.
+3843080	3844880	And there may not be a smooth mechanism
+3844880	3846640	for making up missed work that late
+3846640	3848720	because the ad drop deadline is rather late.
+3848720	3851880	So I encourage you, if you're considering doing
+3851880	3853200	the more intensive version or not,
+3853200	3855240	sign up for the more intensive version,
+3855240	3857320	you can always drop back.
+3857320	3860040	Once we form groups though for the projects,
+3860040	3861880	then obviously there is an aspect
+3861880	3863080	of letting down your teammates.
+3863080	3866160	So think carefully now about which one you want to join.
+3866160	3868560	It'll be hard to switch between them
+3868560	3870600	but we'll do whatever the registrar requires us to do
+3870600	3872920	in terms of allowing it.
+3872920	3874920	Other questions?
+3874920	3875920	Yes.
+3875920	3876920	Yes.
+3876920	3877920	The other side remains separate.
+3877920	3879400	Can we access undergrads?
+3879400	3881560	Access the AI problems just?
+3881560	3882560	Yes.
+3882560	3883560	Yes.
+3883560	3885960	You will be, if the course sites remain separate,
+3885960	3888200	we'll undergrads be able to access the AI problems.
+3888200	3889800	The answer is yes.
+3891800	3892800	Yes.
+3892800	3896200	Student 6, 8, 7, 4, 10, 4, 10, 4, 10, 4, 10, 4, 10, 4, 10?
+3896200	3898000	Should students in 6, 8, 7, 4, 10,
+3898000	3899640	both presentations not necessary?
+3899640	3901160	You're welcome to both, if you want,
+3901160	3906920	but the course 6 rest stations should be sufficient.
+3906920	3910520	Other questions?
+3910520	3911520	Yes.
+3911520	3914840	What's covered in the normal rest stations?
+3914840	3916280	What's covered in the normal rest stations?
+3916280	3918600	It'll be reinforcing material that's in the lectures.
+3918600	3921360	So the goal is not to introduce any new material
+3921360	3927040	in the course 20, course 7, rest stations.
+3927120	3930520	Just glad I had not to introduce any new material.
+3930520	3931200	Other questions?
+3934680	3935360	OK, great.
+3935360	3938320	And we'll hang around a little bit to answer any remaining
+3938320	3940400	questions that may come up.
