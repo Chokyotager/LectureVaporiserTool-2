@@ -24,6 +24,7 @@ parser.add_argument("--gpt_presence_penalty", action="store", type=float, help="
 parser.add_argument("--gpt_frequency_penalty", action="store", type=float, help="ChatGPT frequency penality", default=1)
 parser.add_argument("--ocr_frame_time", action="store", type=float, help="Time (in seconds) between frames for OCR", default=10)
 parser.add_argument("--sentences_per_chunk", action="store", type=int, help="Number of coherent sentences to pass per chunk into ChatGPT. Smaller values will create far more verbose notes.", default=100)
+parser.add_argument("--threads", action="store", type=int, help="Number of threads to use for Whisper transcription", default=8)
 
 parser.add_argument("input", action="store", type=str, help="Input video file (can be mp4, ts, etc.)")
 parser.add_argument("output", action="store", type=str, help="Output folder")
@@ -51,6 +52,8 @@ import easyocr
 import openai
 
 lang_tool = language_tool_python.LanguageTool("en-US")
+
+threads = args.threads
 
 openai.api_key = args.key
 
@@ -87,7 +90,7 @@ def transcribe_video (directory, video, seconds_per_frame=5):
 
     os.makedirs(directory + "images", exist_ok=True)
 
-    os.system(f"ffmpeg -i {video} -vf fps={fps} -dpi 800 {directory}/images/out_%d.png")
+    os.system(f"ffmpeg -i \"{video}\" -vf fps={fps} -dpi 800 \"{directory}/images/out_%d.png\"")
 
     # FFMPEG to split images
     frames = sorted(os.listdir(directory + "images/"), key=lambda x: int(x.replace(".png", "").split("_")[1]))
@@ -162,8 +165,8 @@ system_message = {"role": "system", "content": "You are a helpful AI assistant t
 
 os.makedirs(output_directory, exist_ok=True)
 
-os.system(f"ffmpeg -i {video} -vn {output_directory}/audio.wav")
-os.system(f"whisper --language en --model base.en --threads 32 {output_directory}/audio.wav --output_dir {output_directory}")
+os.system(f"ffmpeg -i \"{video}\" -vn \"{output_directory}/audio.wav\"")
+os.system(f"whisper --language en --model base.en --threads {threads} \"{output_directory}/audio.wav\" --output_dir \"{output_directory}\"")
 
 transcribe_video(output_directory, video, seconds_per_frame=seconds_per_frame_transcription)
 
@@ -359,6 +362,7 @@ Create 10 MCQs, and 3 short questions, on the following summarised notes. MCQs s
 
 {|INPUT|}
 """
+
 prompt = prompt.replace("{|INPUT|}", summarised_notes)
 
 completion = openai.ChatCompletion.create(
