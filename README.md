@@ -34,6 +34,12 @@ git clone https://github.com/Chokyotager/LectureVaporiserTool-2
 pip install -r requirements.txt
 ```
 
+You may also have to run the following to update NLTK models:
+```py
+>>> import nltk
+>>> nltk.download('punkt')
+```
+
 These should be accessible as executables (i.e. "ffmpeg", "whisper") when keyed into the command line. The code directly references these
 executables and you will have to change them if they are located elsewhere.
 

@@ -1,8 +1,8 @@
-sumy=0.11.0
-jaro-winkler=2.0.3
-language-tool-python=2.7.1
-tqdm=4.65.0
-torch=1.13.1
-easyocr=1.6.2
-openai=0.27.2
-openai-whisper=20230314
+sumy == 0.11.0
+jaro-winkler == 2.0.3
+language-tool-python == 2.7.1
+tqdm == 4.65.0
+torch == 1.13.1
+easyocr == 1.6.2
+openai == 0.27.2
+openai-whisper == 20230314
